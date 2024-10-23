@@ -417,6 +417,8 @@ class MyStrings {
   static const String logout = "Log out";
   static const String menu = "Menu";
   static const String home = "Home";
+  static const String topUp = "Top Up";
+  static const String transaction = "Transaction";
   static const String writeSomething = "Write something...";
   static const String writeAReview = "Write A Review";
   static const String badResponseMsg = 'Bad Response Format!';
