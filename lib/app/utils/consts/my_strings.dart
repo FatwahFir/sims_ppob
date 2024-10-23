@@ -1,563 +1,564 @@
 class MyStrings {
   static const String appName = "SIMS PPOB";
-  static const String authText = "Login to Attendance";
-  static const String selectALanguage = 'Select Language';
+  static const String authText = "Masuk ke Kehadiran";
+  static const String selectALanguage = 'Pilih Bahasa';
   static const String host = 'https://take-home-test-api.nutech-integrasi.com';
 
   static const String kyc = 'KYC';
-  static const String reason = 'Reason';
-  static const String expiredDate = 'Expired Date';
+  static const String reason = 'Alasan';
+  static const String expiredDate = 'Tanggal Kedaluwarsa';
 
-  static const String users = 'Users';
+  static const String users = 'Pengguna';
 
-  static const String showBalance = 'Show Balance';
-  static const String hideBalance = 'Hide Balance';
+  static const String showBalance = 'Tampilkan Saldo';
+  static const String hideBalance = 'Sembunyikan Saldo';
 
-  static const String todayAttendance = "Today Attendance";
-  static const String noAttendance = "No attendance today";
+  static const String todayAttendance = "Kehadiran Hari Ini";
+  static const String noAttendance = "Tidak ada kehadiran hari ini";
 
   static const String checkIn = 'Check In';
   static const String checkOut = 'Check Out';
-  static const String maxRadius = 'Max Radius (m)';
+  static const String maxRadius = 'Radius Maksimum (m)';
 
-  static const String changeLocation = 'Change User Location';
-  static const String location = 'Location';
-  static const String addLocation = 'Add Location';
-  static const String userLocation = 'User Location';
-  static const String locationName = 'Location Name';
-  static const String coordinate = 'Coordinate Point';
-  static const String locationWarningTitle = 'Location Warning';
+  static const String changeLocation = 'Ubah Lokasi Pengguna';
+  static const String location = 'Lokasi';
+  static const String addLocation = 'Tambahkan Lokasi';
+  static const String userLocation = 'Lokasi Pengguna';
+  static const String locationName = 'Nama Lokasi';
+  static const String coordinate = 'Titik Koordinat';
+  static const String locationWarningTitle = 'Peringatan Lokasi';
   static const String locationWarningMsg =
-      'You are outside the allowed radius for attendance. Please enter the designated area to proceed.';
+      'Anda berada di luar radius yang diizinkan untuk kehadiran. Silakan masukkan area yang ditentukan untuk melanjutkan.';
 
-  static const String save = 'save';
+  static const String save = 'Simpan';
   static const String ok = 'Ok';
 
-  static const String isRequired = 'is required';
+  static const String isRequired = 'diperlukan';
   static const String unableToAccessYourLocation =
-      'Unable to access your location. Please make sure your internet connection is strong and location services are enabled.';
+      'Tidak dapat mengakses lokasi Anda. Pastikan koneksi internet Anda kuat dan layanan lokasi diaktifkan.';
 
-  static const String twoFactorAuth = 'Two Factor Authentication';
+  static const String twoFactorAuth = 'Autentikasi Dua Faktor';
   static const String twoFactorMsg =
-      'Enter 6-digit code from your two factor authenticator APP.';
+      'Masukkan kode 6-digit dari aplikasi autentikator dua faktor Anda.';
   static const String agreePolicyMessage =
-      "You must agree with our privacy & policies";
+      "Anda harus setuju dengan kebijakan privasi kami";
 
-  static const String exitTitle = "Do you want to exit\n the app?";
+  static const String exitTitle = "Apakah Anda ingin keluar\n dari aplikasi?";
   static const String cancelCheckOut =
-      "Are you sure you want to cancel your checkout?";
-  static const String no = "No";
-  static const String yes = "Yes";
+      "Apakah Anda yakin ingin membatalkan checkout Anda?";
+  static const String no = "Tidak";
+  static const String yes = "Ya";
 
-  static const String hasUpperLetter = "Has uppercase letter";
-  static const String hasLowerLetter = "Has lowercase letter";
-  static const String hasDigit = "Has digit";
-  static const String hasSpecialChar = "Has special character";
-  static const String minSixChar = "Min of 6 characters";
+  static const String hasUpperLetter = "Memiliki huruf kapital";
+  static const String hasLowerLetter = "Memiliki huruf kecil";
+  static const String hasDigit = "Memiliki digit";
+  static const String hasSpecialChar = "Memiliki karakter khusus";
+  static const String minSixChar = "Minimal 6 karakter";
 
-  static const String chargeMsg2 = "will cut from your selected wallet";
-  static const String usernameEmptyMsg = "Username can't be empty";
+  static const String chargeMsg2 = "akan dipotong dari dompet yang Anda pilih";
+  static const String usernameEmptyMsg = "Username tidak boleh kosong";
 
-  static const String approved = "Approved";
-  static const String succeed = "Succeed";
-  static const String pending = "Pending";
-  static const String rejected = "Rejected";
-  static const String initiated = 'Initiated';
-  static const String code = 'Code';
-  static const String hello = 'Hello!';
+  static const String approved = "Disetujui";
+  static const String succeed = "Sukses";
+  static const String pending = "Menunggu";
+  static const String rejected = "Ditolak";
+  static const String initiated = 'Inisiasi';
+  static const String code = 'Kode';
+  static const String hello = 'Halo!';
 
-  static const String account = "Account";
-  static const String welcomeBack = "Welcome Back!";
-  static const String back = "Back";
-  static const String recoverAccount = "Recover Account";
+  static const String account = "Akun";
+  static const String welcomeBack = "Selamat Datang Kembali!";
+  static const String back = "Kembali";
+  static const String recoverAccount = "Pulihkan Akun";
   static const String subTittle =
-      "We happy to see you here again enter your username and password";
-  static const String usernameOrEmail = "Username or Email";
-  static const String usernameOrEmailHint = "Enter your username or email";
-  static const String password = "Password";
-  static const String passwordHint = "Enter your password";
-  static const String rememberMe = "Remember Me";
-  static const String forgotPassword = "Forgot Password?";
-  static const String signIn = "Sign In";
-  static const String createAccount = "Create an account";
-  static const String fieldErrorMsg = "Please fill out this field";
+      "Kami senang melihat Anda di sini lagi, masukkan username dan password Anda";
+  static const String usernameOrEmail = "Username atau Email";
+  static const String usernameOrEmailHint = "Masukkan username atau email Anda";
+  static const String password = "Kata Sandi";
+  static const String passwordHint = "Masukkan kata sandi Anda";
+  static const String rememberMe = "Ingat Saya";
+  static const String forgotPassword = "Lupa Kata Sandi?";
+  static const String signIn = "Masuk";
+  static const String createAccount = "Buat akun";
+  static const String fieldErrorMsg = "Silakan isi kolom ini";
   static const String resetPassContent =
-      "To secure your account please provide a secure password";
+      "Untuk mengamankan akun Anda, silakan berikan kata sandi yang aman";
 
   static const String forgetPasswordSubText =
-      "Enter your email or username below to receive a password reset verification code";
+      "Masukkan email atau username Anda di bawah ini untuk menerima kode verifikasi reset kata sandi";
   static const String verifyPasswordSubText =
-      "A 6 digits verification code sent to your email address";
-  static const String viewHistory = "View History";
-  static const String history = "Order History";
-  static const String orderDetails = "Order Details";
+      "Kode verifikasi 6 digit telah dikirim ke alamat email Anda";
+  static const String viewHistory = "Lihat Riwayat ";
+  static const String history = "Riwayat Pesanan";
+  static const String orderDetails = "Detail Pesanan";
 
-  static const String createAnAccount = "Create an account";
+  static const String createAnAccount = "Buat Akun";
   static const String username = "Username";
-  static const String balance = "Your Balance";
-  static const String confirmPassword = "Confirm Password";
+  static const String balance = "Saldo Anda";
+  static const String confirmPassword = "Konfirmasi Kata Sandi";
   static const String email = "Email";
-  static const String country = "Country";
-  static const String phoneNo = "Phone No.";
-  static const String alreadyAccount = "Already have an account?";
-  static const String signUp = "Sign Up";
-  static const String passwordResetEmailSentTo = 'Password reset email sent to';
+  static const String country = "Negara";
+  static const String phoneNo = "Nomor Telepon";
+  static const String alreadyAccount = "Sudah memiliki akun?";
+  static const String signUp = "Daftar";
+  static const String passwordResetEmailSentTo =
+      'Email reset kata sandi telah dikirim ke';
 
-  static const String emailVerification = "Email Verification";
+  static const String emailVerification = "Verifikasi Email";
   static const String viaEmailVerify =
-      "We've sent you an access code via email for email verification";
-  static const String verify = "Verify";
-  static const String didNotReceiveCode = "Didn't Receive Code?";
-  static const String resend = "Resend";
+      "Kami telah mengirimkan kode akses ke email Anda untuk verifikasi email";
+  static const String verify = "Verifikasi";
+  static const String didNotReceiveCode = "Tidak menerima kode?";
+  static const String resend = "Kirim Ulang";
 
-  static const String smsVerification = "Sms Verification";
+  static const String smsVerification = "Verifikasi SMS";
 
-  static const String profileComplete = "Profile Complete";
-  static const String firstName = "First Name";
-  static const String lastName = "Last Name";
-  static const String address = "Address";
-  static const String addressType = "Address Type";
-  static const String myLocation = "My Location";
-  static const String pleaseSelectAnAddress = "Please Select an Address";
+  static const String profileComplete = "Profil Lengkap";
+  static const String firstName = "Nama Depan";
+  static const String lastName = "Nama Belakang";
+  static const String address = "Alamat";
+  static const String addressType = "Tipe Alamat";
+  static const String myLocation = "Lokasi Saya";
+  static const String pleaseSelectAnAddress = "Silakan pilih alamat";
   static const String pleaseSelectAnValidSchedule =
-      "Please select an valid schedule";
+      "Silakan pilih jadwal yang valid";
   static const String pleaseSelectAValidAddress =
-      "Please Select a valid Address";
-  static const String state = "State";
-  static const String city = "City";
-  static const String zipCode = "Zip Code";
-  static const String updateProfile = "Update Profile";
-  static const String updateAddress = "Update Address";
-  static const String update = "Update";
-  static const String enterYour = "Enter your";
-  static const String enter = "Enter";
+      "Silakan pilih alamat yang valid";
+  static const String state = "Provinsi";
+  static const String city = "Kota";
+  static const String zipCode = "Kode Pos";
+  static const String updateProfile = "Perbarui Profil";
+  static const String updateAddress = "Perbarui Alamat";
+  static const String update = "Perbarui";
+  static const String enterYour = "Masukkan";
+  static const String enter = "Masukkan";
   static const String fileSuccessfullyDownload =
-      "File successfully downloaded in this path";
-  static const String downloadFailed = "Downloading failed";
-  static const String downloading = "Downloading! Please Wait";
-  static const String download = "Download";
+      "File berhasil diunduh di jalur ini";
+  static const String downloadFailed = "Gagal mengunduh";
+  static const String downloading = "Mengunduh! Silakan tunggu";
+  static const String download = "Unduh";
   static const String pleaseGiveMePermission =
-      "Please give permission to download file";
+      "Silakan berikan izin untuk mengunduh file";
   static const String youDoNotHaveAnyMessageWithProvider =
-      "You don't have any message with this provider";
+      "Anda tidak memiliki pesan dengan penyedia ini";
   static const String pleaseSendAMessage =
-      "You don't have any messages with this provider. Please send a message.";
-  static const String searchYourServices = "Search your services";
-  static const String laundry = "Laundry";
-  static const String electric = "Electric";
-  static const String tailor = "Tailor";
-  static const String cleaning = "Cleaning";
-  static const String plumber = "Plumber";
-  static const String painting = "Painting";
-  static const String carRepair = "Car Repair";
-  static const String more = "More";
-  static const String inbox = "Inbox";
-  static const String orders = "Orders";
+      "Anda tidak memiliki pesan dengan penyedia ini. Silakan kirim pesan.";
+  static const String searchYourServices = "Cari Layanan Anda";
+  static const String laundry = " Laundry";
+  static const String electric = "Listrik";
+  static const String tailor = "Penjahit";
+  static const String cleaning = "Pembersihan";
+  static const String plumber = "Tukang Ledeng";
+  static const String painting = "Pengecatan";
+  static const String carRepair = "Perbaikan Mobil";
+  static const String more = "Lebih";
+  static const String inbox = "Kotak Masuk";
+  static const String orders = "Pesanan";
   static const String trending = "Trending";
-  static const String popular = "Popular";
-  static const String category = "Category";
-  static const String subcategory = "Subcategories";
-  static const String viewAll = "View All";
-  static const String recommendedForYou = "Recommended for You";
-  static const String recommended = "Recommended";
-  static const String forYou = "for You";
-  static const String recentView = "Recent View";
-  static const String recentView_ = "Recent-View";
+  static const String popular = "Populer";
+  static const String category = "Kategori";
+  static const String subcategory = "Subkategori";
+  static const String viewAll = "Lihat Semua";
+  static const String recommendedForYou = "Rekomendasi untuk Anda";
+  static const String recommended = "Rekomendasi";
+  static const String forYou = "untuk Anda";
+  static const String recentView = "Lihat Terbaru";
+  static const String recentView_ = "Lihat Terbaru-";
   static const String shareThisApp =
-      "Share this app with your friend\nand get discount";
-  static const String details = "Details";
-  static const String description = "Description";
-  static const String enterDescription = "Enter your description here";
-  static const String rateThisService = "Rate this Service";
-  static const String rateThisProvider = "Rate this Provider";
-  static const String share = "Share";
-  static const String startFrom = "Start from - ";
-  static const String startFrom_ = "Start from";
-  static const String pharma = "Pharma";
-  static const String beauty = "Beauty";
-  static const String antiGerm = "Anti-germ";
-  static const String menSalon = "Men's Salon";
-  static const String appliance = "Appliance";
-  static const String allServices = "All Services";
-  static const String allCategories = "All Categories";
-  static const String selectACategoryFirst = "Select a Category First";
-  static const String services = "Services";
+      "Bagikan aplikasi ini dengan teman Anda dan dapatkan diskon";
+  static const String details = "Detail";
+  static const String description = "Deskripsi";
+  static const String enterDescription = "Masukkan deskripsi Anda";
+  static const String rateThisService = "Nilai Layanan Ini";
+  static const String rateThisProvider = "Nilai Penyedia Ini";
+  static const String share = "Bagikan";
+  static const String startFrom = "Mulai dari - ";
+  static const String startFrom_ = "Mulai dari";
+  static const String pharma = "Farmasi";
+  static const String beauty = "Kecantikan";
+  static const String antiGerm = "Anti-Germ";
+  static const String menSalon = "Sal on Pria";
+  static const String appliance = "Perangkat";
+  static const String allServices = "Semua Layanan";
+  static const String allCategories = "Semua Kategori";
+  static const String selectACategoryFirst = "Pilih kategori terlebih dahulu";
+  static const String services = "Layanan";
   static const String checkout = "Checkout";
 
-  static const String cleaningServices = "Cleaning Services";
+  static const String cleaningServices = "Layanan Pembersihan";
   static const String professionalCleaningServices =
-      "Professional cleaning services";
-  static const String commonSpaceCleaning = "Common Space Cleaning";
-  static const String homeDeepClean = "Home Deep Clean";
-  static const String floorCleaningForHome = "Floor Cleaning for Home";
-  static const String bathroomDeepCleaning = "Bathroom Deep Cleaning";
-  static const String kitchenDeepCleaning = "Kitchen Deep Cleaning";
-  static const String windowThaiCleaning = "Window & Thai Cleaning";
+      "Layanan Pembersihan Profesional";
+  static const String commonSpaceCleaning = "Pembersihan Ruang Umum";
+  static const String homeDeepClean = "Pembersihan Rumah Mendalam";
+  static const String floorCleaningForHome = "Pembersihan Lantai untuk Rumah";
+  static const String bathroomDeepCleaning = "Pembersihan Kamar Mandi Mendalam";
+  static const String kitchenDeepCleaning = "Pembersihan Dapur Mendalam";
+  static const String windowThaiCleaning = "Pembersihan Jendela & Thai";
 
-  static const String availableProvider = "Available Provider";
-  static const String availableService = "Available Service";
-  static const String filterResult = "Filter Result";
-  static const String searchResult = "Search Result";
-  static const String searchResultUnder = "Search Result Under";
-  static const String cleanZone = "Clean Zone";
+  static const String availableProvider = "Penyedia Tersedia";
+  static const String availableService = "Layanan Tersedia";
+  static const String filterResult = "Hasil Filter";
+  static const String searchResult = "Hasil Pencarian ";
+  static const String searchResultUnder = "Hasil Pencarian di Bawah";
+  static const String cleanZone = "Zona Bersih";
 
-  static const String provider = "Provider";
-  static const String selectProvider = "Select Provider";
-  static const String executiveProCleaning = "Executive Pro Cleaning";
-  static const String expertProfessional = "Expert Professional";
-  static const String viewDetails = "View Details";
-  static const String supportHr = "24 / Support";
-  static const String support = "Support";
-  static const String book = "Book";
-  static const String roofTopCleaning = "Roof top cleaning";
-  static const String confirm = "Confirm";
-  static const String totalAmount = "Total Amount";
-  static const String totalPrice = "Total Price:";
-  static const String orderQuantity = "Order Quantity";
-  static const String add = "Add";
+  static const String provider = "Penyedia";
+  static const String selectProvider = "Pilih Penyedia";
+  static const String executiveProCleaning =
+      "Pembersihan Profesional Eksekutif";
+  static const String expertProfessional = "Profesional Ahli";
+  static const String viewDetails = "Lihat Detail";
+  static const String supportHr = "Dukungan 24 Jam";
+  static const String support = "Dukungan";
+  static const String book = "Pesan";
+  static const String roofTopCleaning = "Pembersihan Atap";
+  static const String confirm = "Konfirmasi";
+  static const String totalAmount = "Jumlah Total";
+  static const String totalPrice = "Harga Total:";
+  static const String orderQuantity = "Jumlah Pesanan";
+  static const String add = "Tambah";
 
-  static const String overview = "Overview";
-  static const String whyChooseUs = "Why choose us";
+  static const String overview = "Ringkasan";
+  static const String whyChooseUs = "Mengapa Memilih Kami";
   static const String faq = "FAQ";
-  static const String customerReview = "Customer Review";
-  static const String onlySerVicesCharge = "Only services charge";
-  static const String serviceWarranty = "Service Warranty";
-  static const String serviceExtras = "Extra Services";
-  static const String termsAndConditions = "Terms and Conditions";
-  static const String whatWeIncluded = "What We Included";
-  static const String whatWeExcluded = "What's Excluded";
-  static const String bookingNow = "Booking Now";
-  static const String bookNow = "Book Now";
-  static const String bookingCancel = "Booking Cancel";
-  static const String message = "Message";
+  static const String customerReview = "Ulasan Pelanggan";
+  static const String onlySerVicesCharge = "Hanya Biaya Layanan";
+  static const String serviceWarranty = "Garansi Layanan";
+  static const String serviceExtras = "Layanan Tambahan";
+  static const String termsAndConditions = "Syarat dan Ketentuan";
+  static const String whatWeIncluded = "Apa yang Kami Sertakan";
+  static const String whatWeExcluded = "Apa yang Kami Tidak Sertakan";
+  static const String bookingNow = "Pemesanan Sekarang";
+  static const String bookNow = "Pesan Sekarang";
+  static const String bookingCancel = "Pembatalan Pemesanan";
+  static const String message = "Pesan";
 
-  static const String all = "All";
-  static const String accept = "Accept";
-  static const String assign = "Assign";
-  static const String completed = "Completed";
-  static const String orderId = "Order ID #";
+  static const String all = "Semua";
+  static const String accept = "Terima";
+  static const String assign = "Tugaskan";
+  static const String completed = "Selesai";
+  static const String orderId = "ID Pesanan #";
 
-  static const String profile = "Profile";
+  static const String profile = "Profil";
 
-  static const String myProfile = "My Profile";
-  static const String changePassword = "Change Password";
-  static const String savedAddress = "Saved Address";
-  static const String serviceRequest = "Service Request";
-  static const String myReview = "My Review";
-  static const String myPendingReview = "My Pending Review";
-  static const String referDiscount = "Refer & Discount";
-  static const String offers = "Offers";
-  static const String helpSetting = "Help & Settings";
-  static const String help = "Help";
-  static const String theme = "Theme";
-  static const String language = "Language";
-  static const String termsConditions = "Terms & Conditions";
+  static const String myProfile = "Profil Saya";
+  static const String changePassword = "Ubah Kata Sandi";
+  static const String savedAddress = "Alamat Tersimpan";
+  static const String serviceRequest = "Permintaan Layanan";
+  static const String myReview = "Ulasan Saya";
+  static const String myPendingReview = "Ulasan Saya yang Belum Selesai";
+  static const String referDiscount = "Referensi & Diskon";
+  static const String offers = "Penawaran";
+  static const String helpSetting = "Bantuan & Pengaturan";
+  static const String help = "Bantuan";
+  static const String theme = "Tema";
+  static const String language = "Bahasa";
+  static const String termsConditions = "Syarat & Ketentuan";
 
-  static const String editProfile = "Edit Profile";
+  static const String editProfile = "Ubah Profil";
 
-  static const String ourPrivacyPolicy = "Our Privacy Policy";
-  static const String howLongWeRetain = "How Long We Retain";
-  static const String yourData = "What we don't do with your data";
-  static const String protectionActCompliance = "Protection Act Compliance";
-  static const String refundPolicy = "Payment/Refund Policy";
-  static const String paymentPolicy = "Payment Policy";
+  static const String ourPrivacyPolicy = "Kebijakan Privasi Kami";
+  static const String howLongWeRetain = "Berapa Lama Kami Menyimpan";
+  static const String yourData = "Apa yang Kami Lakukan dengan Data Anda";
+  static const String protectionActCompliance =
+      "Kepatuhan terhadap Undang-Undang Perlindungan";
+  static const String refundPolicy = "Kebijakan Pengembalian Dana";
+  static const String paymentPolicy = "Kebijakan Pembayaran";
 
-  static const String weHaveSent = "We've sent a verification code to";
+  static const String weHaveSent = "Kami telah mengirimkan";
   static const String resetLabelText =
-      "Your account is verified successfully. Now you can change your password.";
+      "Akun Anda telah diverifikasi dengan sukses. Sekarang Anda dapat mengubah kata sandi Anda.";
 
   static const String toRecover =
-      "To recover your account please provide your email or username to find your account";
-  static const String yourEmailAddress = "your email address";
-  static const String resetYourPassword = "Reset Your Password";
-  static const String forgetPassword = "Forget Password";
-  static const String for_ = "for";
-  static const String capital = "Capital";
-  static const String doNotHaveAccount = "Don't have an account?";
-  static const String enterEmailOrUserName = 'Enter username or email';
-  static const String policy = 'Policy';
-  static const String policies = 'Policies';
-  static const String verificationFailed = 'Verification Failed';
-  static const String emailVerificationFailed = 'Email Verification Failed';
-  static const String emailVerificationSuccess = 'Email Verification Success';
+      "Untuk memulihkan akun Anda, silakan berikan alamat email atau username Anda untuk menemukan akun Anda";
+  static const String yourEmailAddress = "alamat email Anda";
+  static const String resetYourPassword = "Atur Ulang Kata Sandi Anda";
+  static const String forgetPassword = "Lupa Kata Sandi";
+  static const String for_ = "untuk";
+  static const String capital = "Kapital";
+  static const String doNotHaveAccount = "Tidak memiliki akun?";
+  static const String enterEmailOrUserName = 'Masukkan username atau email';
+  static const String policy = 'Kebijakan';
+  static const String policies = 'Kebijakan';
+  static const String verificationFailed = 'Verifikasi Gagal';
+  static const String emailVerificationFailed = 'Verifikasi Email Gagal';
+  static const String emailVerificationSuccess = 'Verifikasi Email Sukses';
 
-  static const String login = 'Login';
-  static const String registration = 'Registration';
-  static const String enterYourPassword_ = 'Enter your password';
-  static const String submit = 'Submit';
+  static const String login = 'Masuk';
+  static const String registration = 'Pendaftaran';
+  static const String enterYourPassword_ = 'Masukkan kata sandi Anda';
+  static const String submit = 'Kirim';
 
-  static const String kycVerification = 'KYC Verification';
-  static const String notification = 'Notifications';
+  static const String kycVerification = 'Verifikasi KYC';
+  static const String notification = 'Notifikasi';
 
-  static const String kycData = 'KYC Data';
-  static const String noDataFound = 'No Data Found';
-  static const String noOrderHistoryFound = 'No Order History Found';
+  static const String kycData = 'Data KYC';
+  static const String noDataFound = 'Tidak ada data ditemukan';
+  static const String noOrderHistoryFound =
+      'Tidak ada riwayat pesanan ditemukan';
   static const String noAvailableReviewFound =
-      'No available service found for review';
-  static const String noServiceFound = 'No Service Found';
-  static const String chooseOption = 'Choose option';
-  static const String chooseFile = 'Choose File';
-  static const String gallery = "Gallery";
-  static const String camera = "Camera";
-  static const String kycUnderReviewMsg = 'Your KYC is under review';
-  static const String under = 'Under';
-  static const String kycAlreadyVerifiedMsg = 'You are already verified';
+      'Tidak ada ulasan yang tersedia untuk review';
+  static const String noServiceFound = 'Tidak ada layanan ditemukan';
+  static const String chooseOption = 'Pilih opsi';
+  static const String chooseFile = 'Pilih file';
+  static const String gallery = "Galeri";
+  static const String camera = "Kamera";
+  static const String kycUnderReviewMsg = 'KYC Anda sedang dalam proses review';
+  static const String under = 'Dalam proses';
+  static const String kycAlreadyVerifiedMsg = 'Anda sudah diverifikasi';
 
-  static const String gateway = 'Gateway';
-  static const String paymentMethod = 'Payment Method';
-  static const String iAgreeWith = "I agree with the";
+  static const String gateway = 'Gerbang';
+  static const String paymentMethod = 'Metode Pembayaran';
+  static const String iAgreeWith = "Saya setuju dengan";
 
-  static const String emailAddress = 'E-mail Address';
+  static const String emailAddress = 'Alamat Email';
 
-  static const String currentPassword = 'Current Password';
-  static const String createNewPassword = "Create new password";
+  static const String currentPassword = 'Kata Sandi Saat Ini';
+  static const String createNewPassword = "Buat kata sandi baru";
 
   static const String createPasswordSubText =
-      "Please provide a strong password to protect your account";
-  static const String newPassword = 'New password';
-  static const String reTypePassword = 'Retype password';
-  static const String enterCurrentPassword = 'Enter current password';
-  static const String enterNewPassword = 'Enter new password';
-  static const String enterConfirmPassword = 'Enter confirm password';
-  static const invalidLengthPassMsg =
-      'Password must be at least 8 characters long.';
+      "Silakan berikan kata sandi yang kuat untuk melindungi akun Anda";
+  static const String newPassword = 'Kata sandi baru';
+  static const String reTypePassword = 'Ulangi kata sandi';
+  static const String enterCurrentPassword = 'Masukkan kata sandi saat ini';
+  static const String enterNewPassword = 'Masukkan kata sandi baru';
+  static const String enterConfirmPassword = 'Masukkan konfirmasi kata sandi';
+  static const invalidLengthPassMsg = 'Kata sandi harus minimal 8 karakter.';
   static const invalidComplexityPassMsg =
-      'Password must contain uppercase letters, numbers, and special characters.';
+      'Kata sandi harus mengandung huruf kapital, angka, dan karakter khusus.';
   static const passwordNotMatchMsg =
-      'Password and confirmation password do not match.';
+      'Kata sandi dan konfirmasi kata sandi tidak cocok.';
 
-  static const String addWithdraw = "Add Withdraw";
-  static const String enterAmount = "Enter Amount";
+  static const String addWithdraw = "Tambahkan Penarikan";
+  static const String enterAmount = "Masukkan Jumlah";
   static const String hint = "0.0";
-  static const String withdrawMethod = "Withdraw Method";
-  static const String searchByTrxId = "Search by trx id";
-  static const String noTrxFound = "No Transaction Found";
-  static const String notFound = "Not Found";
+  static const String withdrawMethod = "Metode Penarikan";
+  static const String searchByTrxId = "Cari dengan ID Transaksi";
+  static const String noTrxFound = "Tidak ada transaksi ditemukan";
+  static const String notFound = "Tidak ditemukan";
   static const String status = "Status";
-  static const String complete = "Completed";
-  static const String cancel = "Cancel";
-  static const String cancelOrder = "Cancel Order";
-  static const String paymentInitiate = "Payment Initiate";
-  static const String orderCreated = "Order Created";
-  static const String orderTime = "Order Time";
-  static const String orderID = "Order ID";
-  static const String orderStatus = "Order Status";
-  static const String paymentType = "Payment Type";
-  static const String time = "Time";
-  static const String useCode = "Use code";
-  static const String toSaveUpTo = "to save up to";
-  static const String toNextPurchase = "your next purchase";
+  static const String complete = "Selesai";
+  static const String cancel = "Batal";
+  static const String cancelOrder = "Batal Pesanan";
+  static const String paymentInitiate = "Pembayaran Dimulai";
+  static const String orderCreated = "Pesanan Dibuat";
+  static const String orderTime = "Waktu Pesanan";
+  static const String orderID = "ID Pesanan";
+  static const String orderStatus = "Status Pesanan";
+  static const String paymentType = "Tipe Pembayaran";
+  static const String time = "Waktu";
+  static const String useCode = "Gunakan kode";
+  static const String toSaveUpTo = "untuk menghemat hingga";
+  static const String toNextPurchase = "pembelian berikutnya";
 
-  static const String otpVerification = "OTP Verification";
+  static const String otpVerification = "Verifikasi OTP";
 
-  static const String success = 'success';
-  static const String version = 'version';
-  static const String logoutSuccessMsg = 'Sign Out Successfully';
+  static const String success = 'sukses';
+  static const String version = 'versi';
+  static const String logoutSuccessMsg = 'Keluar dengan sukses';
 
-  static const String invalidEmailMsg = "Enter valid email";
-  static const String enterCurrentPass = "Enter your current password";
-  static const String enterNewPass = "Enter your new password";
+  static const String invalidEmailMsg = "Masukkan alamat email yang valid";
+  static const String enterCurrentPass = "Masukkan kata sandi saat ini";
+  static const String enterNewPass = "Masukkan kata sandi baru";
   static const String invalidPassMsg =
-      "Password must be contain 1 special character and number";
-  static const String kMatchPassError = "Password doesn't match";
-  static const String kFirstNameNullError = "Enter first name";
-  static const String kLastNameNullError = "Enter last name";
-  static const String kShortUserNameError = "Username must be 6 character";
-  static const String phoneNumber = "Phone Number";
-  static const String passVerification = 'Password Verification';
+      "Kata sandi harus mengandung 1 karakter khusus dan angka";
+  static const String kMatchPassError = "Kata sandi tidak cocok";
+  static const String kFirstNameNullError = "Masukkan nama depan";
+  static const String kLastNameNullError = "Masukkan nama belakang";
+  static const String kShortUserNameError = "Username harus minimal 6 karakter";
+  static const String phoneNumber = "Nomor Telepon";
+  static const String passVerification = 'Verifikasi Kata Sandi';
 
-  static const String successfullyCodeResend = 'Resend the code successfully';
-  static const String resendCodeFail = 'Failed to resend code';
-  static const String somethingWentWrong = 'Something went wrong';
-  static const String noRedirectUrlFound = 'No redirect url found';
-  static const String invalidAmount = 'Invalid amount';
-  static const String search = 'Search';
-  static const String resetPassword = 'Reset Password';
+  static const String successfullyCodeResend = 'Kode berhasil dikirim ulang';
+  static const String resendCodeFail = 'Gagal mengirim kode ulang';
+  static const String somethingWentWrong = 'Terjadi kesalahan';
+  static const String noRedirectUrlFound = 'Tidak ada URL redirect ditemukan';
+  static const String invalidAmount = 'Jumlah tidak valid';
+  static const String search = 'Cari';
+  static const String resetPassword = 'Atur Ulang Kata Sandi';
   static const String resetPassMsg =
-      "Enter your email or username below to receive a password reset verification code";
+      "Masukkan alamat email atau username Anda di bawah ini untuk menerima kode verifikasi reset kata sandi";
 
-  static const String verificationSuccess = 'Verification Success';
-  static const String enterYourUsername = 'Enter your username';
-  static const String enterUsername = 'Enter username';
-  static const String enterYourEmail = 'Enter your email';
-  static const String enterYourPhoneNumber = "Enter your phone number";
-  static const String selectYourCountryName = "Select your Country";
-  static const String enterYourCountryCode = "Select your Country code";
-  static const String confirmYourPassword = 'Confirm your password';
-  static const String selectYourAddress = "Select your Address";
-  static const String selectYourState = "Select your State";
-  static const String selectYourZipCode = "Select your ZipCode";
-  static const String selectYourCity = "Select your City";
+  static const String verificationSuccess = 'Verifikasi Sukses';
+  static const String enterYourUsername = 'Masukkan username Anda';
+  static const String enterUsername = 'Masukkan username';
+  static const String enterYourEmail = 'Masukkan alamat email Anda';
+  static const String enterYourPhoneNumber = "Masukkan nomor telepon Anda";
+  static const String selectYourCountryName = "Pilih negara Anda";
+  static const String enterYourCountryCode = "Pilih kode negara Anda";
+  static const String confirmYourPassword = 'Konfirmasi kata sandi Anda';
+  static const String selectYourAddress = "Pilih alamat Anda";
+  static const String selectYourState = "Pilih provinsi Anda";
+  static const String selectYourZipCode = "Pilih kode pos Anda";
+  static const String selectYourCity = "Pilih kota Anda";
 
   static const String registerMsg =
-      "Please enter valid info to\ncreate account";
-  static const String noCodeReceive = "Didn't receive the code?";
+      "Silakan masukkan informasi yang valid untuk membuat akun";
+  static const String noCodeReceive = "Tidak menerima kode?";
   static const String smsVerificationMsg =
-      "We've sent you an access code to your phone number for SMS verification";
-  static const String wellComeBack = 'Welcome back';
-  static const String wellcome = 'Welcome';
-  static const String loginMsg = 'Log into your Account';
-  static const String register = 'Register';
-  static const String registerNow = 'Register Now';
-  static const String selectACountry = "Select a country";
-  static const String requestFail = "Request Failed";
-  static const String requestSuccess = "Request Success";
-  static const String loginFailedTryAgain = 'Login failed,please try again';
-  static const String selectOne = "Select One";
+      "Kami telah mengirimkan kode akses ke nomor telepon Anda untuk verifikasi SMS";
+  static const String wellComeBack = 'Selamat datang kembali';
+  static const String wellcome = 'Selamat datang';
+  static const String loginMsg = 'Masuk ke akun Anda';
+  static const String register = 'Daftar';
+  static const String registerNow = 'Daftar Sekarang';
+  static const String selectACountry = "Pilih negara";
+  static const String requestFail = "Permintaan gagal";
+  static const String requestSuccess = "Permintaan sukses";
+  static const String loginFailedTryAgain = 'Gagal masuk, silakan coba lagi';
+  static const String selectOne = "Pilih salah satu";
   static const String sms = 'SMS';
-  static const String noInternet = 'No internet connection';
-  static const String retry = "Retry";
-  static const String return_ = 'Return';
-  static const String otpFieldEmptyMsg = "Otp field can't be empty";
+  static const String noInternet = 'Tidak ada koneksi internet';
+  static const String retry = "Coba lagi";
+  static const String return_ = 'Kembali';
+  static const String otpFieldEmptyMsg = "Kolom OTP tidak boleh kosong";
   static const String goBackLogMsg =
-      'Sorry something went wrong here, go back and retry after sometimes';
-  static const String secondAgo = 'second ago';
-  static const String minutesAgo = 'minutes ago';
-  static const String hourAgo = 'hour ago';
-  static const String daysAgo = 'days ago';
-  static const String justNow = 'just now';
-  static const String level = "Level";
-  static const String logout = "Log out";
+      'Maaf, terjadi kesalahan. Silakan kembali dan coba lagi nanti';
+  static const String secondAgo = 'detik yang lalu';
+  static const String minutesAgo = 'menit yang lalu';
+  static const String hourAgo = 'jam yang lalu';
+  static const String daysAgo = 'hari yang lalu';
+  static const String justNow = 'baru saja';
+  static const String level = "Tingkat";
+  static const String logout = "Keluar";
   static const String menu = "Menu";
-  static const String home = "Home";
-  static const String topUp = "Top Up";
-  static const String transaction = "Transaction";
-  static const String writeSomething = "Write something...";
-  static const String writeAReview = "Write A Review";
-  static const String badResponseMsg = 'Bad Response Format!';
-  static const String serverError = 'Server Error';
-  static const String rto = 'Request timed  out';
-  static const String forbidden = 'Forbidden';
-  static const String unAuthorized = 'Unauthorized';
-  static const String yourEmail = 'Your email';
-  static const String passResetMailSendTo = "Password reset email sent to ";
-  static const String passwordChanged = "Password change successfully";
-  static const String error = 'Error';
-  static const String onlineChat = 'Chat';
-  static const String imageViewer = 'Image Viewer';
-  static const String cart = "Cart";
-  static const String addToCart = "Add to cart";
-  static const String add_ = "Add +";
+  static const String home = "Beranda";
+  static const String topUp = "Isi Ulang";
+  static const String transaction = "Transaksi";
+  static const String writeSomething = "Tulis sesuatu...";
+  static const String writeAReview = "Tulis Ulasan";
+  static const String badResponseMsg = 'Format respons tidak valid!';
+  static const String serverError = 'Kesalahan server';
+  static const String rto = 'Permintaan waktu habis';
+  static const String forbidden = 'Dilarang';
+  static const String unAuthorized = 'Tidak diizinkan';
+  static const String yourEmail = 'Alamat email Anda';
+  static const String passResetMailSendTo =
+      "Email reset kata sandi telah dikirim ke ";
+  static const String passwordChanged = "Kata sandi berhasil diubah";
+  static const String error = 'Kesalahan';
+  static const String onlineChat = 'Obrolan Online';
+  static const String imageViewer = 'Penglihat Gambar';
+  static const String cart = "Keranjang";
+  static const String addToCart = "Tambahkan ke keranjang";
+  static const String add_ = "Tambah +";
 
-  static const String contactInfo = "Contact Information";
-  static const String serviceSchedule = "Service Schedule";
-  static const String billAndPayment = "Bill and Payment";
-  static const String additionalRemarks = "Additional Remarks";
-  static const String enterAdditionalRemarks = "Enter additional remarks";
-  static const String enterPromoCode = "Enter promo code";
-  static const String selectPaymentType = "Select Payment Type";
-  static const String selectGateway = "Select Payment Gateway";
-  static const String edit = "Edit";
-  static const String placeOrder = "Place Order";
-  static const String setLocation = "Set Location";
-  static const String currentLocation = "Current Location";
-  static const String others = "Others";
-  static const String office = "Office";
-  static const String useCurrentLocation = "Use current location";
-  static const String setFromMap = "Set from map";
+  static const String contactInfo = "Informasi Kontak";
+  static const String serviceSchedule = "Jadwal Layanan";
+  static const String billAndPayment = "Tagihan dan Pembayaran";
+  static const String additionalRemarks = "Keterangan Tambahan";
+  static const String enterAdditionalRemarks = "Masukkan keterangan tambahan";
+  static const String enterPromoCode = "Masukkan kode promo";
+  static const String selectPaymentType = "Pilih Tipe Pembayaran";
+  static const String selectGateway = "Pilih Gerbang Pembayaran";
+  static const String edit = "Ubah";
+  static const String placeOrder = "Pesan Sekarang";
+  static const String setLocation = "Atur Lokasi";
+  static const String currentLocation = "Lokasi Saat Ini";
+  static const String others = "Lain-lain";
+  static const String office = "Kantor";
+  static const String useCurrentLocation = "Gunakan lokasi saat ini";
+  static const String setFromMap = "Atur dari peta";
 
-  static const String selectLocation = "Select Location";
-  static const String pickLocation = "Pick Location";
+  static const String selectLocation = "Pilih Lokasi";
+  static const String pickLocation = "Pilih Lokasi";
 
   static const String filter = "Filter";
-  static const String servicesZone = "Services Zone";
-  static const String priceRange = "Price Range";
-  static const String price = "Price: ";
-  static const String apply = "Apply";
+  static const String servicesZone = "Zona Layanan";
+  static const String priceRange = "Rentang Harga";
+  static const String price = "Harga: ";
+  static const String apply = "Terapkan";
 
-  static const String recentSearches = "Recent searches";
-  static const String clearAll = "Clear all";
+  static const String recentSearches = "Pencarian Terbaru";
+  static const String clearAll = "Hapus Semua";
 
-  static const String whatAreYouLookingFor = "What are you looking for?";
+  static const String whatAreYouLookingFor = "Apa yang Anda cari?";
 
-  static const String suggestedForYou = "Suggested for you";
+  static const String suggestedForYou = "Disarankan untuk Anda";
 
-  static const String noServiceAvailable = "No service available";
+  static const String noServiceAvailable = "Tidak ada layanan tersedia";
 
-  static const String ratings = "Ratings";
-  static const String reviews = "Reviews";
+  static const String ratings = "Peringkat";
+  static const String reviews = "Ulasan";
 
-  static var continue_ = "Continue";
+  static var continue_ = "Lanjutkan";
   static var locationServiceDisableMsg =
-      "Location services are disabled. Please enable the services";
-  static var locationPermissionDenied = "Location permissions are denied";
+      "Layanan lokasi dinonaktifkan. Silakan aktifkan layanan";
+  static var locationPermissionDenied = "Izin lokasi ditolak";
   static var locationPermissionPermanentDenied =
-      "Location permissions are permanently denied, we cannot request permissions.";
-  static var addedToCartSuccessfully = "Added to cart successfully";
-  static var mapIsNotAvailableInDemoApp = "Map unavailable in demo app";
-  static var tapOnLocationPicker = "Tap On Location Picker";
-  static var chatStoringFailed = "Chat storing failed";
-  static var extraService = "Extra Service";
+      "Izin lokasi ditolak secara permanen, kami tidak dapat meminta izin.";
+  static var addedToCartSuccessfully = "Berhasil ditambahkan ke keranjang";
+  static var mapIsNotAvailableInDemoApp =
+      "Peta tidak tersedia di aplikasi demo";
+  static var tapOnLocationPicker = "Ketuk Pemilih Lokasi";
+  static var chatStoringFailed = "Gagal menyimpan obrolan";
+  static var extraService = "Layanan Tambahan";
 
-  static var cashOnDelivery = "Cash on delivery";
+  static var cashOnDelivery = "Bayar di Tempat";
 
-  static var getDiscount = "Get Discount";
-  static var discount = "Discount";
-  static var applyCoupon = "Apply a coupon for discount";
-  static var coupon = "Coupon";
+  static var getDiscount = "Dapatkan Diskon";
+  static var discount = "Diskon";
+  static var applyCoupon = "Terapkan kupon untuk diskon";
+  static var coupon = "Kupon";
 
-  static const String useCouponCode = "Use Code";
-  static const String howCanWeHelp = "How can we help?";
+  static const String useCouponCode = "Gunakan Kode";
+  static const String howCanWeHelp = "Bagaimana kami dapat membantu?";
   static const String requestUsDesiredService =
-      "Request us your desired service and we'll get back to you in the shortest.";
-  static const String sendServiceRequest = "Send Service Request";
+      "Minta kami layanan yang Anda inginkan dan kami akan menghubungi Anda dalam waktu sesingkat mungkin.";
+  static const String sendServiceRequest = "Kirim Permintaan Layanan";
   static const String tellUsDesireService =
-      "Tell us about your desired service";
+      "Beritahu kami tentang layanan yang Anda inginkan";
 
-  static const String serviceName = "Service Name";
-  static const String serviceArea = "Service Area";
+  static const String serviceName = "Nama Layanan";
+  static const String serviceArea = "Area Layanan";
 
-  static const String editLocation = "Edit Location";
+  static const String editLocation = "Ubah Lokasi";
 
-  static const String setYourLocation = "Please set your location";
+  static const String setYourLocation = "Silakan atur lokasi Anda";
 
-  static const String you = "You";
+  static const String you = "Anda";
 
-  static const String expired = "Expired";
-  static const String current = "Current";
+  static const String expired = "Kedaluwarsa";
+  static const String current = "Saat Ini";
 
-  static const String myAddress = "My Address";
+  static const String myAddress = "Alamat Saya";
 
-  static const String delete = "Delete";
-  static const String addNew = "Add New";
-  static const String updateLocation = "Update Address";
-  static const String saveLocation = "Save Address";
+  static const String delete = "Hapus";
+  static const String addNew = "Tambah Baru";
+  static const String updateLocation = "Perbarui Alamat";
+  static const String saveLocation = "Simpan Alamat";
 
-  static const String cashPayment = "Cash Payment";
-  static const String walletPayment = "Wallet Payment";
-  static const String onlinePayment = "Online Payment";
+  static const String cashPayment = "Pembayaran Tunai";
+  static const String walletPayment = "Pembayaran Dompet";
+  static const String onlinePayment = "Pembayaran Online";
 
   static const String enterYourDesireServiceName =
-      "Enter your desire service name";
+      "Masukkan nama layanan yang Anda inginkan";
 
   static const String warningDialogMsg =
-      "You are currently receiving service from another provider. If you continue, all prior services from your cart will be deleted.";
-  static const String warningDialogTitle = "Are you sure to reset?";
+      "Anda saat ini menerima layanan dari penyedia lain. Jika Anda melanjutkan, semua layanan sebelumnya dari keranjang Anda akan dihapus.";
+  static const String warningDialogTitle = "Apakah Anda yakin untuk reset?";
   static const String orderCancelWarningDialogMsg =
-      "You want to cancel this order?";
-  static const String sureWarningDialogTitle = "Are you sure?";
-  static const String clearTotalCart = "Clear Total Cart";
+      "Apakah Anda ingin membatalkan pesanan ini ?";
+  static const String sureWarningDialogTitle = "Apakah Anda yakin?";
+  static const String clearTotalCart = "Hapus Total Keranjang";
   static const String cartDeleteSureWarningDialogTitle =
-      "Are you sure want to clear total cart?";
+      "Apakah Anda yakin ingin menghapus total keranjang?";
 
-  static const String by = "By";
+  static const String by = "Oleh";
 
-  static const String noFileChosen = 'No file chosen';
+  static const String noFileChosen = 'Tidak ada file yang dipilih';
 
-  static const String attachment = 'Attachment';
-  static const String msgFieldEmptyMsg = "Message field can't be empty";
-  static const String requiredMsg = "This field can't be empty";
+  static const String attachment = 'Lampiran';
+  static const String msgFieldEmptyMsg = "Kolom pesan tidak boleh kosong";
+  static const String requiredMsg = "Kolom ini tidak boleh kosong";
 
-  static const String cartEmptyMsg = "No items in your cart";
+  static const String cartEmptyMsg = "Tidak ada item di keranjang Anda";
 
-  static const String setScheduleTime = "Set Schedule Time";
+  static const String setScheduleTime = "Atur Waktu Jadwal";
   static const String scheduleBottomSheetMsg =
-      "Please, set up your own schedule to take this service";
+      "Silakan atur jadwal Anda sendiri untuk mengambil layanan ini";
 
   static RegExp emailValidatorRegExp =
       RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
-  // static List<LanguageModel> languages = [
-  //   LanguageModel(imageUrl: '', languageName: 'English', countryCode: 'US', languageCode: 'en'),
-  //   LanguageModel(imageUrl: '', languageName: 'Arabic', countryCode: 'SA', languageCode: 'ar'),
-  // ];
 }
