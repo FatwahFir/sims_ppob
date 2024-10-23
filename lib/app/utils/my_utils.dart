@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:developer';
 import 'dart:io';
 
+import 'package:sims_ppob/app/shared/components/custom_snackbar.dart';
 import 'package:sims_ppob/app/utils/consts/my_strings.dart';
 
 class MyUtils {
@@ -22,6 +23,6 @@ class MyUtils {
     }
     log(error.toString());
     log(message);
-    // CustomSnackBar.error(errorList: [message]);
+    CustomSnackBar.error(errorList: [message]);
   }
 }

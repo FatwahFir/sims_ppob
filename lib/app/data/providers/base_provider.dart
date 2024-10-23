@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'dart:io';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:get/get.dart';
+import 'package:sims_ppob/app/shared/components/custom_snackbar.dart';
 import 'package:sims_ppob/app/utils/consts/my_strings.dart';
 import 'package:sims_ppob/app/utils/my_utils.dart';
 
@@ -33,7 +34,7 @@ class BaseProvider extends GetConnect {
 
     print(response.body['message']);
     log(message);
-    // CustomSnackBar.error(errorList: [message]);
+    CustomSnackBar.error(errorList: [message]);
   }
 
   @override

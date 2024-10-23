@@ -4,9 +4,11 @@ import 'package:google_fonts/google_fonts.dart';
 class Themes {
   Themes._();
 
-  static Color get primaryColor => const Color(0xff8F57FF);
+  static Color get primaryColor => red;
   static Color get primaryColorDark => const Color(0xFF4A1DA1);
   static Color get secondaryColor => const Color(0xffEEE5FF);
+
+  static Color get transparent => Colors.transparent;
 
   static Color get accentColor => const Color(0xFFC084FC);
   static Color get neutralColor => const Color(0xFFFFFFFF);

@@ -24,11 +24,8 @@ class AuthController extends GetxController {
       };
       var res = await _provider.login(data);
       if (res.statusCode == HttpStatus.ok) {
-        print("okkkkkk");
         await Box.setToken(res.body['data']['token']);
         Get.offAllNamed(Routes.HOME);
-      } else {
-        print('failll');
       }
     } catch (e) {
       MyUtils.exceptionHandler(e);
