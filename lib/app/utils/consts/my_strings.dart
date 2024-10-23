@@ -423,7 +423,7 @@ class MyStrings {
   static const String logout = "Keluar";
   static const String menu = "Menu";
   static const String home = "Beranda";
-  static const String topUp = "Isi Ulang";
+  static const String topUp = "Top Up";
   static const String transaction = "Transaksi";
   static const String writeSomething = "Tulis sesuatu...";
   static const String writeAReview = "Tulis Ulasan";
@@ -459,6 +459,11 @@ class MyStrings {
   static const String office = "Kantor";
   static const String useCurrentLocation = "Gunakan lokasi saat ini";
   static const String setFromMap = "Atur dari peta";
+
+  static const String enterTopUpNominal = "Masukan nominal $topUp";
+  static const String pleaseEnterNominal = "Harap masukan nominal $topUp";
+  static const String minTopUpNominal = "Batas minimum $topUp adalah 10.000";
+  static const String maxTopUpNominal = "Batas maksimum $topUp adalah 1000.000";
 
   static const String selectLocation = "Pilih Lokasi";
   static const String pickLocation = "Pilih Lokasi";

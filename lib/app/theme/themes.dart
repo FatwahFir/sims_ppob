@@ -82,6 +82,9 @@ class Themes {
         ),
       ),
       appBarTheme: AppBarTheme(
+        scrolledUnderElevation: 0,
+        shadowColor: neutralColor,
+        surfaceTintColor: neutralColor,
         color: neutralColor,
         foregroundColor: neutralColor,
         elevation: 0,

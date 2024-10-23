@@ -12,6 +12,7 @@ class Box {
 
   static String? get token => _session.read('token');
   static User? get user => User.fromJson(_session.read('user'));
+  static int? get balance => _session.read('balance');
 
   static Future<void> setLoginData(Map<String, dynamic> data) async {
     await _session.write('login_data', data);
@@ -23,5 +24,9 @@ class Box {
 
   static Future<void> setUser(Map<String, dynamic> data) async {
     await _session.write('user', data);
+  }
+
+  static Future<void> setBalance(int data) async {
+    await _session.write('balance', data);
   }
 }

@@ -56,6 +56,7 @@ class HomeController extends GetxController {
         await Box.setUser(resProfile.body['data']);
       }
       var res = await _provider.getBalance();
+      await Box.setBalance(res.body['data']['balance'] as int);
       balance.value = res.body['data']['balance'] as int;
       services.addAll(await _provider.getServices());
       banners.addAll(await _provider.getBanners());
