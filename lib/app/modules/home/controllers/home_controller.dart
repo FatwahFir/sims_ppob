@@ -33,6 +33,7 @@ class HomeController extends GetxController {
   RxList<Banner> banners = <Banner>[].obs;
   Rx<User> user = User().obs;
   RxInt balance = 0.obs;
+  RxBool isLoading = false.obs;
 
   final _provider = Get.find<HomeProvider>();
 
@@ -47,6 +48,7 @@ class HomeController extends GetxController {
 
   Future<void> getInfo() async {
     try {
+      isLoading(true);
       services.clear();
       banners.clear();
       if (Box.user == null) {
@@ -59,6 +61,8 @@ class HomeController extends GetxController {
       banners.addAll(await _provider.getBanners());
     } catch (e) {
       MyUtils.exceptionHandler(e);
+    } finally {
+      isLoading(false);
     }
   }
 }
