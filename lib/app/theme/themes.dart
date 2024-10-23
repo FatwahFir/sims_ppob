@@ -60,7 +60,7 @@ class Themes {
   static ThemeData get theme {
     return ThemeData(
       scaffoldBackgroundColor: neutralColor,
-      primaryColor: primaryColor,
+      primaryColor: red,
       primaryColorDark: primaryColorDark,
       primaryColorLight: primaryColor,
       primarySwatch: Colors.blue,

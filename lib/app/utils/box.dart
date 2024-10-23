@@ -7,17 +7,15 @@ class Box {
     await GetStorage.init();
   }
 
-  static GetStorage get loginState => _session;
+  static GetStorage get session => _session;
 
-  static String? get attendanceStatus => _session.read('status');
-
-  // static String get role => loginState.read('role');
-
-  // static void setUser(User user) {
-  //   _session.write('user', user.toJson());
-  // }
+  static String? get token => _session.read('token');
 
   static Future<void> setLoginData(Map<String, dynamic> data) async {
-    await _session.write('user', data);
+    await _session.write('login_data', data);
+  }
+
+  static Future<void> setToken(String data) async {
+    await _session.write('token', data);
   }
 }

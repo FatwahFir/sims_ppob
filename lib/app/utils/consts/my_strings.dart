@@ -2,6 +2,7 @@ class MyStrings {
   static const String appName = "SIMS PPOB";
   static const String authText = "Login to Attendance";
   static const String selectALanguage = 'Select Language';
+  static const String host = 'https://take-home-test-api.nutech-integrasi.com';
 
   static const String kyc = 'KYC';
   static const String reason = 'Reason';
@@ -321,6 +322,7 @@ class MyStrings {
   static const String withdrawMethod = "Withdraw Method";
   static const String searchByTrxId = "Search by trx id";
   static const String noTrxFound = "No Transaction Found";
+  static const String notFound = "Not Found";
   static const String status = "Status";
   static const String complete = "Completed";
   static const String cancel = "Cancel";
@@ -347,6 +349,8 @@ class MyStrings {
   static const String enterNewPass = "Enter your new password";
   static const String invalidPassMsg =
       "Password must be contain 1 special character and number";
+  static const String invalidLengthPassMsg =
+      "Password must be contain at least 6 character";
   static const String kMatchPassError = "Password doesn't match";
   static const String kFirstNameNullError = "Enter first name";
   static const String kLastNameNullError = "Enter last name";
@@ -412,7 +416,7 @@ class MyStrings {
   static const String badResponseMsg = 'Bad Response Format!';
   static const String serverError = 'Server Error';
   static const String rto = 'Request timed  out';
-  static const String forbiden = 'Forbiden';
+  static const String forbidden = 'Forbidden';
   static const String unAuthorized = 'Unauthorized';
   static const String yourEmail = 'Your email';
   static const String passResetMailSendTo = "Password reset email sent to ";

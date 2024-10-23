@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:sims_ppob/app/routes/app_pages.dart';
+import 'package:sims_ppob/app/utils/box.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -18,6 +20,12 @@ class HomeView extends GetView<HomeController> {
           style: TextStyle(fontSize: 20),
         ),
       ),
+      floatingActionButton: ElevatedButton(
+          onPressed: () {
+            Box.session.erase();
+            Get.offAllNamed(Routes.AUTH);
+          },
+          child: Text("click")),
     );
   }
 }
