@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:sims_ppob/app/modules/home/widgets/grid_item.dart';
+import 'package:sims_ppob/app/routes/app_pages.dart';
 import 'package:sims_ppob/app/shared/components/balance_widget.dart';
 import 'package:sims_ppob/app/shared/components/loading_indicator.dart';
 import 'package:sims_ppob/app/shared/ui/gap.dart';
@@ -117,9 +118,17 @@ class HomeView extends GetView<HomeController> {
                             itemCount: controller.services.length,
                             itemBuilder: (context, index) {
                               final data = controller.services;
-                              return GridItem(
-                                title: data[index].serviceName ?? '-',
-                                image: data[index].serviceIcon ?? '-',
+                              return GestureDetector(
+                                onTap: () => Get.toNamed(
+                                  Routes.PAYMENT,
+                                  arguments: {
+                                    'item': controller.services[index]
+                                  },
+                                ),
+                                child: GridItem(
+                                  title: data[index].serviceName ?? '-',
+                                  image: data[index].serviceIcon ?? '-',
+                                ),
                               );
                             },
                           ),

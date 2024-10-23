@@ -6,6 +6,8 @@ import '../modules/core/bindings/core_binding.dart';
 import '../modules/core/views/core_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/payment/bindings/payment_binding.dart';
+import '../modules/payment/views/payment_view.dart';
 import '../modules/register/bindings/register_binding.dart';
 import '../modules/register/views/register_view.dart';
 import '../modules/top_up/bindings/top_up_binding.dart';
@@ -46,6 +48,11 @@ class AppPages {
       name: _Paths.TOP_UP,
       page: () => TopUpView(),
       binding: TopUpBinding(),
+    ),
+    GetPage(
+      name: _Paths.PAYMENT,
+      page: () => PaymentView(),
+      binding: PaymentBinding(),
     ),
   ];
 }

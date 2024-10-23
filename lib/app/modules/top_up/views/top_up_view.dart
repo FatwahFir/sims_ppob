@@ -18,134 +18,132 @@ class TopUpView extends GetView<TopUpController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            MyStrings.topUp,
-            style: Get.textTheme.displaySmall,
-          ),
-          centerTitle: true,
+      appBar: AppBar(
+        title: Text(
+          MyStrings.topUp,
+          style: Get.textTheme.displaySmall,
         ),
-        body: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                BalanceWidget(balance: Box.balance ?? 0),
-                const Gap.v(h: 50),
-                Text(
-                  'Silahkan masukan',
-                  style: Get.textTheme.displayMedium
-                      ?.copyWith(fontWeight: FontWeight.normal, fontSize: 20),
+        centerTitle: true,
+      ),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              BalanceWidget(balance: Box.balance ?? 0),
+              const Gap.v(h: 50),
+              Text(
+                'Silahkan masukan',
+                style: Get.textTheme.displayMedium
+                    ?.copyWith(fontWeight: FontWeight.normal, fontSize: 20),
+              ),
+              Text(
+                "nominal Top Up",
+                style: Get.textTheme.displayLarge?.copyWith(fontSize: 26),
+              ),
+              const Gap.v(h: 50),
+              Form(
+                key: controller.formKey,
+                child: CommonTextField(
+                  isAutoValidate: true,
+                  controller: controller.nominalC,
+                  hintText: MyStrings.enterTopUpNominal,
+                  prefixIcon: Icons.money,
+                  keyboardType: TextInputType.number,
+                  onChanged: (value) {
+                    if (controller.selectedNominalIndex.value != -1) {
+                      controller.selectedNominalIndex.value = -1;
+                    }
+                    if (value.length >= 6 && value.length <= 9) {
+                      controller.isBtnDisabled(false);
+                    } else {
+                      controller.isBtnDisabled(true);
+                    }
+                    controller.formatWithThousandSeparator(
+                      value,
+                    );
+                  },
+                  validator: (value) {
+                    return controller.validateInput(value);
+                  },
                 ),
-                Text(
-                  "nominal Top Up",
-                  style: Get.textTheme.displayLarge?.copyWith(fontSize: 26),
-                ),
-                const Gap.v(h: 50),
-                Form(
-                  key: controller.formKey,
-                  child: CommonTextField(
-                    isAutoValidate: true,
-                    controller: controller.nominalC,
-                    hintText: MyStrings.enterTopUpNominal,
-                    prefixIcon: Icons.money,
-                    keyboardType: TextInputType.number,
-                    onChanged: (value) {
-                      if (controller.selectedNominalIndex.value != -1) {
-                        controller.selectedNominalIndex.value = -1;
-                      }
-                      if (value.length >= 6 && value.length <= 9) {
-                        controller.isBtnDisabled(false);
-                      } else {
-                        controller.isBtnDisabled(true);
-                      }
-                      controller.formatWithThousandSeparator(
-                        value,
-                      );
-                    },
-                    validator: (value) {
-                      return controller.validateInput(value);
-                    },
+              ),
+              const Gap.v(h: 20),
+              SizedBox(
+                height: 150,
+                width: Get.width,
+                child: GridView.builder(
+                  physics: const NeverScrollableScrollPhysics(),
+                  padding: const EdgeInsets.all(0),
+                  shrinkWrap: true,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 3, // Number of items in a row
+                    crossAxisSpacing:
+                        0.0, // Minimal horizontal spacing between items
+                    mainAxisSpacing: 20.0,
+                    childAspectRatio: 20 / 9,
                   ),
-                ),
-                const Gap.v(h: 20),
-                SizedBox(
-                  height: 150,
-                  width: Get.width,
-                  child: GridView.builder(
-                    physics: const NeverScrollableScrollPhysics(),
-                    padding: const EdgeInsets.all(0),
-                    shrinkWrap: true,
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 3, // Number of items in a row
-                      crossAxisSpacing:
-                          0.0, // Minimal horizontal spacing between items
-                      mainAxisSpacing: 20.0,
-                      childAspectRatio: 20 / 9,
-                    ),
-                    itemCount: controller.nominal.length,
-                    itemBuilder: (context, index) {
-                      final data = controller.nominal;
-                      return Obx(
-                        () => GestureDetector(
-                          onTap: () {
-                            controller.nominalC.clear();
-                            FocusScope.of(context).unfocus();
-                            controller.formKey.currentState?.reset();
-                            controller.selectedNominalIndex.value = index;
-                          },
-                          child: Container(
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(5),
-                                border: Border.all(
-                                  color:
-                                      controller.selectedNominalIndex.value ==
-                                              index
-                                          ? Themes.red
-                                          : Themes.grayColor,
-                                ),
+                  itemCount: controller.nominal.length,
+                  itemBuilder: (context, index) {
+                    final data = controller.nominal;
+                    return Obx(
+                      () => GestureDetector(
+                        onTap: () {
+                          controller.nominalC.clear();
+                          FocusScope.of(context).unfocus();
+                          controller.formKey.currentState?.reset();
+                          controller.selectedNominalIndex.value = index;
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(5),
+                              border: Border.all(
                                 color: controller.selectedNominalIndex.value ==
                                         index
-                                    ? Themes.red20.withOpacity(0.5)
-                                    : Themes.transparent),
-                            child: Center(
-                              child: Text(
-                                Converter.convertToRp(
-                                  data[index],
-                                ),
-                                style: Get.textTheme.bodyLarge?.copyWith(
-                                  color:
-                                      controller.selectedNominalIndex.value ==
-                                              index
-                                          ? Themes.red
-                                          : Themes.darkColor,
-                                ),
+                                    ? Themes.red
+                                    : Themes.grayColor,
+                              ),
+                              color:
+                                  controller.selectedNominalIndex.value == index
+                                      ? Themes.red20.withOpacity(0.5)
+                                      : Themes.transparent),
+                          child: Center(
+                            child: Text(
+                              Converter.convertToRp(
+                                data[index],
+                              ),
+                              style: Get.textTheme.bodyLarge?.copyWith(
+                                color: controller.selectedNominalIndex.value ==
+                                        index
+                                    ? Themes.red
+                                    : Themes.darkColor,
                               ),
                             ),
-                          ).marginSymmetric(horizontal: 3),
-                        ),
-                      );
-                    },
+                          ),
+                        ).marginSymmetric(horizontal: 3),
+                      ),
+                    );
+                  },
+                ),
+              ),
+              const Gap.v(h: 50),
+              Obx(
+                () => CommonButton(
+                  backgroundColor:
+                      controller.selectedNominalIndex.value != -1 ||
+                              controller.isBtnDisabled.isFalse
+                          ? Themes.red
+                          : Themes.grayColor,
+                  child: const Text(
+                    MyStrings.topUp,
                   ),
                 ),
-                const Gap.v(h: 50),
-                Obx(
-                  () => CommonButton(
-                    backgroundColor:
-                        controller.selectedNominalIndex.value != -1 ||
-                                controller.isBtnDisabled.isFalse
-                            ? Themes.red
-                            : Themes.grayColor,
-                    child: const Text(
-                      MyStrings.topUp,
-                    ),
-                  ),
-                )
-              ],
-            ),
+              )
+            ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

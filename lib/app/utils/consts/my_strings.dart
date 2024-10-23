@@ -10,6 +10,8 @@ class MyStrings {
 
   static const String users = 'Pengguna';
 
+  static const String pay = 'Bayar';
+
   static const String showBalance = 'Tampilkan Saldo';
   static const String hideBalance = 'Sembunyikan Saldo';
 
@@ -442,6 +444,8 @@ class MyStrings {
   static const String cart = "Keranjang";
   static const String addToCart = "Tambahkan ke keranjang";
   static const String add_ = "Tambah +";
+
+  static const String payment = "Pembayaran";
 
   static const String contactInfo = "Informasi Kontak";
   static const String serviceSchedule = "Jadwal Layanan";
