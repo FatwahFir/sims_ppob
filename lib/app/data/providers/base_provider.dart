@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:get/get.dart';
 import 'package:sims_ppob/app/shared/components/custom_snackbar.dart';
+import 'package:sims_ppob/app/utils/box.dart';
 import 'package:sims_ppob/app/utils/consts/my_strings.dart';
 import 'package:sims_ppob/app/utils/my_utils.dart';
 
@@ -48,7 +49,7 @@ class BaseProvider extends GetConnect {
             await (Connectivity().checkConnectivity());
 
         if (!connectivityResult.contains(ConnectivityResult.none)) {
-          request.headers['Authorization'] = 'Bearer nnflaknlklslanlsnkl';
+          request.headers['Authorization'] = 'Bearer ${Box.token}';
           request.headers['Accept'] = 'application/json';
         } else {
           throw const SocketException(MyStrings.noInternet);
@@ -56,6 +57,8 @@ class BaseProvider extends GetConnect {
       } catch (e) {
         MyUtils.exceptionHandler(e);
       }
+
+      print(request.headers);
 
       return request;
     });

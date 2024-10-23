@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 import 'package:sims_ppob/app/utils/consts/my_strings.dart';
 
 class Converter {
@@ -115,6 +116,12 @@ class Converter {
 
   static String toSnakeCase(String input) {
     return input.toLowerCase().replaceAll(' ', '_');
+  }
+
+  static String convertToRp(int nilai) {
+    final formatRupiah =
+        NumberFormat.currency(locale: 'id', symbol: 'Rp ', decimalDigits: 0);
+    return formatRupiah.format(nilai);
   }
 }
 

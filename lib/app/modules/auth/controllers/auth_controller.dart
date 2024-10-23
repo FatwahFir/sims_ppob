@@ -25,7 +25,7 @@ class AuthController extends GetxController {
       var res = await _provider.login(data);
       if (res.statusCode == HttpStatus.ok) {
         await Box.setToken(res.body['data']['token']);
-        Get.offAllNamed(Routes.HOME);
+        Get.offAllNamed(Routes.CORE);
       }
     } catch (e) {
       MyUtils.exceptionHandler(e);
