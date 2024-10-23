@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:sims_ppob/app/theme/themes.dart';
 
 class CommonButton extends ElevatedButton {
   CommonButton({
@@ -39,8 +39,8 @@ class CommonButton extends ElevatedButton {
   }) : super(
           onPressed: onPressed ?? () {},
           style: ElevatedButton.styleFrom(
-            foregroundColor: foregroundColor ?? Colors.white,
-            backgroundColor: backgroundColor ?? Get.theme.primaryColor,
+            foregroundColor: foregroundColor ?? Themes.white,
+            backgroundColor: backgroundColor ?? Themes.red,
             // disabledForegroundColor: foregroundColor!.withOpacity(0.38),
             // disabledBackgroundColor: foregroundColor.withOpacity(0.12),
             elevation: elevation ?? 0,

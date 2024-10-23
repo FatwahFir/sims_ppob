@@ -1,5 +1,5 @@
 class MyStrings {
-  static const String appName = "Attendance";
+  static const String appName = "SIMS PPOB";
   static const String authText = "Login to Attendance";
   static const String selectALanguage = 'Select Language';
 
@@ -414,7 +414,7 @@ class MyStrings {
   static const String rto = 'Request timed  out';
   static const String forbiden = 'Forbiden';
   static const String unAuthorized = 'Unauthorized';
-  static const String yourEmail = 'your email';
+  static const String yourEmail = 'Your email';
   static const String passResetMailSendTo = "Password reset email sent to ";
   static const String passwordChanged = "Password change successfully";
   static const String error = 'Error';

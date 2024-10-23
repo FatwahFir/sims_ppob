@@ -92,6 +92,9 @@ class CommonTextField extends StatelessWidget {
 
   Widget _buildTextField() {
     return TextFormField(
+      cursorColor: Themes.red,
+      cursorWidth: 1.5,
+      cursorOpacityAnimates: true,
       minLines: minLines ?? 1,
       maxLines: maxLines ?? 1,
       validator: validator,
@@ -121,28 +124,28 @@ class CommonTextField extends StatelessWidget {
               )
             : null,
         floatingLabelBehavior: labelBehavior,
-        contentPadding: contentPadding ?? const EdgeInsets.all(20),
+        contentPadding: contentPadding ?? const EdgeInsets.all(12),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(5),
           borderSide: BorderSide(
             color: Themes.darkColor,
           ),
         ),
         focusColor: Themes.darkColor,
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(5),
           borderSide: BorderSide(
             color: Themes.grayColor,
           ),
         ),
-        // focusedBorder: OutlineInputBorder(
-        //   borderRadius: BorderRadius.circular(5),
-        //   borderSide: const BorderSide(
-        //       // color: Themes.darkColor,
-        //       ),
-        // ),
-        fillColor: fillColor ?? Colors.white,
-        hintStyle: TextStyle(color: Themes.grayColor, fontSize: 12),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(5),
+          borderSide: BorderSide(
+            color: Themes.grayColor,
+          ),
+        ),
+        fillColor: fillColor ?? Themes.white,
+        hintStyle: TextStyle(color: Themes.grayColor, fontSize: 16),
         labelStyle: TextStyle(
           color: Themes.darkColor,
           fontSize: 14,
@@ -152,15 +155,16 @@ class CommonTextField extends StatelessWidget {
           onPressed: onPressSuffix,
           icon: Icon(
             suffixIcon,
-            color: Themes.primaryColor,
-            size: 20,
+            color: Themes.grayColor,
+            size: 18,
           ),
         ),
         // prefixIconColor: Themes.darkColor,
         prefixIcon: prefixIcon != null
             ? Icon(
+                size: 18,
                 prefixIcon,
-                color: Themes.primaryColor,
+                color: Themes.grayColor,
               )
             : null,
         hintText: hintText,
