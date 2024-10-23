@@ -4,6 +4,7 @@ import 'package:sims_ppob/app/theme/themes.dart';
 class CommonTextField extends StatelessWidget {
   final TextEditingController? controller;
   final String? hintText;
+  final bool? isAutoValidate;
   final String? labelText;
   final String? initialValue;
   final IconData? prefixIcon;
@@ -52,6 +53,7 @@ class CommonTextField extends StatelessWidget {
       this.initialValue,
       this.filled = true,
       this.readOnly = false,
+      this.isAutoValidate = false,
       this.fillColor,
       this.disabled,
       this.onSave});
@@ -92,6 +94,9 @@ class CommonTextField extends StatelessWidget {
 
   Widget _buildTextField() {
     return TextFormField(
+      autovalidateMode: isAutoValidate!
+          ? AutovalidateMode.onUserInteraction
+          : AutovalidateMode.disabled,
       cursorColor: Themes.red,
       cursorWidth: 1.5,
       cursorOpacityAnimates: true,

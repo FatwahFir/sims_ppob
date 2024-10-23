@@ -32,7 +32,6 @@ class BaseProvider extends GetConnect {
         break;
     }
 
-    print(response.body['message']);
     log(message);
     CustomSnackBar.error(errorList: [message]);
   }

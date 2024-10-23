@@ -312,9 +312,16 @@ class MyStrings {
   static const String createPasswordSubText =
       "Please provide a strong password to protect your account";
   static const String newPassword = 'New password';
+  static const String reTypePassword = 'Retype password';
   static const String enterCurrentPassword = 'Enter current password';
   static const String enterNewPassword = 'Enter new password';
   static const String enterConfirmPassword = 'Enter confirm password';
+  static const invalidLengthPassMsg =
+      'Password must be at least 8 characters long.';
+  static const invalidComplexityPassMsg =
+      'Password must contain uppercase letters, numbers, and special characters.';
+  static const passwordNotMatchMsg =
+      'Password and confirmation password do not match.';
 
   static const String addWithdraw = "Add Withdraw";
   static const String enterAmount = "Enter Amount";
@@ -349,8 +356,6 @@ class MyStrings {
   static const String enterNewPass = "Enter your new password";
   static const String invalidPassMsg =
       "Password must be contain 1 special character and number";
-  static const String invalidLengthPassMsg =
-      "Password must be contain at least 6 character";
   static const String kMatchPassError = "Password doesn't match";
   static const String kFirstNameNullError = "Enter first name";
   static const String kLastNameNullError = "Enter last name";

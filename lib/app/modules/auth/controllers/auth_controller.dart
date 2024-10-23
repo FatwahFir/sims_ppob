@@ -13,7 +13,7 @@ class AuthController extends GetxController {
   final email = TextEditingController();
   final password = TextEditingController();
   final _provider = Get.find<AuthProvider>();
-  final formKey = GlobalKey<FormState>();
+  GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   Future<void> login() async {
     try {
@@ -32,5 +32,12 @@ class AuthController extends GetxController {
     } finally {
       isLoading(false);
     }
+  }
+
+  @override
+  void onClose() {
+    super.onClose();
+    email.dispose();
+    password.dispose();
   }
 }
