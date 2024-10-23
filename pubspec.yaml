@@ -12,6 +12,7 @@ dependencies:
   get_storage: 2.1.1
   intl: 0.19.0
   connectivity_plus: 6.1.0
+  carousel_slider: 5.0.0
   flutter: 
     sdk: flutter
 

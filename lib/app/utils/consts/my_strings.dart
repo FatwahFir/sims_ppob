@@ -91,7 +91,7 @@ class MyStrings {
 
   static const String createAnAccount = "Create an account";
   static const String username = "Username";
-  static const String balance = "Balance";
+  static const String balance = "Your Balance";
   static const String confirmPassword = "Confirm Password";
   static const String email = "Email";
   static const String country = "Country";
@@ -392,6 +392,7 @@ class MyStrings {
   static const String smsVerificationMsg =
       "We've sent you an access code to your phone number for SMS verification";
   static const String wellComeBack = 'Welcome back';
+  static const String wellcome = 'Welcome';
   static const String loginMsg = 'Log into your Account';
   static const String register = 'Register';
   static const String registerNow = 'Register Now';

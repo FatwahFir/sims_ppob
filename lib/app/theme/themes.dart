@@ -42,6 +42,7 @@ class Themes {
   static Color get red80 => const Color(0xFFFD5662);
   static Color get red100 => const Color(0xFFFD3C4A);
   static Color get red => const Color(0xFFDA3328);
+  static Color get redDark => const Color.fromARGB(255, 177, 42, 33);
   static Color get green => const Color(0xFF52BD94);
   static Color get green20 => const Color(0xFFCFFAEA);
   static Color get green40 => const Color(0xFF93EACA);
