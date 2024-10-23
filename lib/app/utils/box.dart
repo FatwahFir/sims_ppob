@@ -11,7 +11,9 @@ class Box {
   static GetStorage get session => _session;
 
   static String? get token => _session.read('token');
-  static User? get user => User.fromJson(_session.read('user'));
+  static User? get user => _session.read('user') != null
+      ? User.fromJson(_session.read('user'))
+      : null;
   static int? get balance => _session.read('balance');
 
   static Future<void> setLoginData(Map<String, dynamic> data) async {

@@ -1,10 +1,11 @@
+import 'dart:developer';
+
 import 'package:get/get.dart';
 import 'package:sims_ppob/app/data/models/banner_model.dart';
 import 'package:sims_ppob/app/data/models/service_model.dart';
 import 'package:sims_ppob/app/data/models/user_model.dart';
 import 'package:sims_ppob/app/data/providers/home_provider.dart';
 import 'package:sims_ppob/app/utils/box.dart';
-import 'package:sims_ppob/app/utils/my_utils.dart';
 
 class HomeController extends GetxController {
   final List<Map<String, dynamic>> gridItems = [
@@ -61,7 +62,8 @@ class HomeController extends GetxController {
       services.addAll(await _provider.getServices());
       banners.addAll(await _provider.getBanners());
     } catch (e) {
-      MyUtils.exceptionHandler(e);
+      // MyUtils.exceptionHandler(e);
+      log(error: e, "HomeController Err");
     } finally {
       isLoading(false);
     }

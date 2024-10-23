@@ -8,6 +8,7 @@ import 'package:sims_ppob/app/shared/components/balance_widget.dart';
 import 'package:sims_ppob/app/shared/components/loading_indicator.dart';
 import 'package:sims_ppob/app/shared/ui/gap.dart';
 import 'package:sims_ppob/app/theme/themes.dart';
+import 'package:sims_ppob/app/utils/box.dart';
 import 'package:sims_ppob/app/utils/consts/my_strings.dart';
 import 'package:sims_ppob/app/utils/consts/path.dart';
 
@@ -50,9 +51,9 @@ class HomeView extends GetView<HomeController> {
                             ),
                             InkWell(
                               onTap: () {
-                                // Box.session.erase();
-                                // Get.offAllNamed(Routes.AUTH);
-                                controller.balance.value += 100000;
+                                Box.session.erase();
+                                Get.offAllNamed(Routes.AUTH);
+                                // controller.balance.value += 100000;
                               },
                               child: CircleAvatar(
                                 backgroundImage:
