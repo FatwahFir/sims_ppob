@@ -79,7 +79,7 @@ class HomeView extends GetView<HomeController> {
                                       fontSize: 22),
                                 ),
                                 Text(
-                                  "${controller.user.value.firstName} ${controller.user.value.lastName}",
+                                  "${Box.user?.firstName} ${Box.user?.lastName}",
                                   style: Get.textTheme.displayLarge
                                       ?.copyWith(fontSize: 26),
                                 ),
