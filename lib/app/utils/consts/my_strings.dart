@@ -467,7 +467,8 @@ class MyStrings {
   static const String enterTopUpNominal = "Masukan nominal $topUp";
   static const String pleaseEnterNominal = "Harap masukan nominal $topUp";
   static const String minTopUpNominal = "Batas minimum $topUp adalah 10.000";
-  static const String maxTopUpNominal = "Batas maksimum $topUp adalah 1000.000";
+  static const String maxTopUpNominal =
+      "Batas maksimum $topUp adalah 1.000.000";
 
   static const String selectLocation = "Pilih Lokasi";
   static const String pickLocation = "Pilih Lokasi";

@@ -38,17 +38,19 @@ class TopUpController extends GetxController {
     } else if (numericValue < 10000) {
       return MyStrings.minTopUpNominal;
     } else if (numericValue > 1000000) {
-      return MyStrings.minTopUpNominal;
+      return MyStrings.maxTopUpNominal;
     }
 
     return null;
   }
 
   bool isButtonDisable() {
-    return selectedNominalIndex.value == -1 ||
-        (MyUtils.strThousandToInt(nominalC.text) ?? 0) < 10000 ||
-        nominalC.text.isEmpty ||
-        nominalC.text.toLowerCase() == 'null';
+    // return selectedNominalIndex.value == -1 ||
+    //     (MyUtils.strThousandToInt(nominalC.text) ?? 0) < 10000 ||
+    //     (MyUtils.strThousandToInt(nominalC.text) ?? 0) > 1000000 ||
+    //     nominalC.text.isEmpty ||
+    //     nominalC.text.toLowerCase() == 'null';
+    return (MyUtils.strThousandToInt(nominalC.text) ?? 0) > 1000000;
   }
 
   Future<void> topUp() async {

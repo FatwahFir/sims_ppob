@@ -10,6 +10,7 @@ import 'package:sims_ppob/app/theme/themes.dart';
 import 'package:sims_ppob/app/utils/box.dart';
 import 'package:sims_ppob/app/utils/consts/my_strings.dart';
 import 'package:sims_ppob/app/utils/converter.dart';
+import 'package:sims_ppob/app/utils/my_utils.dart';
 
 import '../controllers/top_up_controller.dart';
 
@@ -60,7 +61,10 @@ class TopUpView extends GetView<TopUpController> {
                             if (controller.selectedNominalIndex.value != -1) {
                               controller.selectedNominalIndex.value = -1;
                             }
-                            if (value.length >= 6 && value.length <= 9) {
+                            if (value.length >= 6 &&
+                                value.length <= 9 &&
+                                (MyUtils.strThousandToInt(value) ?? 0) <=
+                                    1000000) {
                               controller.isBtnDisabled(false);
                             } else {
                               controller.isBtnDisabled(true);
