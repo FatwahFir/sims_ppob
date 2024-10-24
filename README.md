@@ -47,7 +47,7 @@ Follow these steps to get the app running locally:
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/FatwahFir/sims_ppob.git
-   cd e-wallet-app
+   cd sims_ppob
    ```
 
 2. **Install Dependencies**
