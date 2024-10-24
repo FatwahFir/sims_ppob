@@ -8,7 +8,6 @@ class TransactionProvider extends BaseProvider {
     var res = await get(
       "/transaction/history?offset=$offset&limit=$limit",
     );
-    print(res.body);
     return MyUtils.fromJsonList<Transaction>(
       res.body['data']['records'],
       Transaction.fromJson,

@@ -64,6 +64,7 @@ class BaseProvider extends GetConnect {
     });
 
     httpClient.addResponseModifier<dynamic>((request, response) {
+      print(response.body);
       if (response.statusCode != 200 && response.statusCode != 201) {
         handleResponseError(response);
       }

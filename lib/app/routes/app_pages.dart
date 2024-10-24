@@ -16,7 +16,6 @@ import '../modules/top_up/bindings/top_up_binding.dart';
 import '../modules/top_up/views/top_up_view.dart';
 import '../modules/transaction_history/bindings/transaction_history_binding.dart';
 import '../modules/transaction_history/views/transaction_history_view.dart';
-import '../utils/box.dart';
 
 part 'app_routes.dart';
 
@@ -24,27 +23,27 @@ class AppPages {
   AppPages._();
 
   // static const INITIAL = Routes.PROFILE;
-  static var INITIAL = Box.token != null ? Routes.CORE : Routes.AUTH;
+  // static var INITIAL = ;
 
   static final routes = [
     GetPage(
       name: _Paths.HOME,
-      page: () => HomeView(),
+      page: () => const HomeView(),
       binding: HomeBinding(),
     ),
     GetPage(
       name: _Paths.AUTH,
-      page: () => AuthView(),
+      page: () => const AuthView(),
       binding: AuthBinding(),
     ),
     GetPage(
       name: _Paths.REGISTER,
-      page: () => RegisterView(),
+      page: () => const RegisterView(),
       binding: RegisterBinding(),
     ),
     GetPage(
         name: _Paths.CORE,
-        page: () => CoreView(),
+        page: () => const CoreView(),
         binding: CoreBinding(),
         bindings: [
           HomeBinding(),
@@ -54,22 +53,22 @@ class AppPages {
         ]),
     GetPage(
       name: _Paths.TOP_UP,
-      page: () => TopUpView(),
+      page: () => const TopUpView(),
       binding: TopUpBinding(),
     ),
     GetPage(
       name: _Paths.PAYMENT,
-      page: () => PaymentView(),
+      page: () => const PaymentView(),
       binding: PaymentBinding(),
     ),
     GetPage(
       name: _Paths.TRANSACTION_HISTORY,
-      page: () => TransactionHistoryView(),
+      page: () => const TransactionHistoryView(),
       binding: TransactionHistoryBinding(),
     ),
     GetPage(
       name: _Paths.PROFILE,
-      page: () => ProfileView(),
+      page: () => const ProfileView(),
       binding: ProfileBinding(),
     ),
   ];

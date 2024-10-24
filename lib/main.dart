@@ -14,7 +14,7 @@ void main() async {
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Application",
-      initialRoute: AppPages.INITIAL,
+      initialRoute: Box.token != null ? Routes.CORE : Routes.AUTH,
       getPages: AppPages.routes,
       theme: Themes.theme,
     ),
