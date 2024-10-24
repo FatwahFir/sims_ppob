@@ -12,6 +12,8 @@ class MyStrings {
 
   static const String pay = 'Bayar';
 
+  static const String refresh = 'Segarkan';
+
   static const String showBalance = 'Tampilkan Saldo';
   static const String hideBalance = 'Sembunyikan Saldo';
 
@@ -153,7 +155,7 @@ class MyStrings {
   static const String plumber = "Tukang Ledeng";
   static const String painting = "Pengecatan";
   static const String carRepair = "Perbaikan Mobil";
-  static const String more = "Lebih";
+  static const String more = "Lebih Banyak";
   static const String inbox = "Kotak Masuk";
   static const String orders = "Pesanan";
   static const String trending = "Trending";

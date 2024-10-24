@@ -12,13 +12,15 @@ import '../modules/register/bindings/register_binding.dart';
 import '../modules/register/views/register_view.dart';
 import '../modules/top_up/bindings/top_up_binding.dart';
 import '../modules/top_up/views/top_up_view.dart';
+import '../modules/transaction_history/bindings/transaction_history_binding.dart';
+import '../modules/transaction_history/views/transaction_history_view.dart';
 
 part 'app_routes.dart';
 
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.CORE;
+  static const INITIAL = Routes.TRANSACTION_HISTORY;
 
   static final routes = [
     GetPage(
@@ -53,6 +55,11 @@ class AppPages {
       name: _Paths.PAYMENT,
       page: () => PaymentView(),
       binding: PaymentBinding(),
+    ),
+    GetPage(
+      name: _Paths.TRANSACTION_HISTORY,
+      page: () => TransactionHistoryView(),
+      binding: TransactionHistoryBinding(),
     ),
   ];
 }
