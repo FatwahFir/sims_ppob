@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:sims_ppob/app/data/top_up_provider.dart';
 
 import '../controllers/top_up_controller.dart';
 
@@ -7,6 +8,9 @@ class TopUpBinding extends Bindings {
   void dependencies() {
     Get.lazyPut<TopUpController>(
       () => TopUpController(),
+    );
+    Get.lazyPut<TopUpProvider>(
+      () => TopUpProvider(),
     );
   }
 }

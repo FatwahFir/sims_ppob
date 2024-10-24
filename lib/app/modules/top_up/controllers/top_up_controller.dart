@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:intl/intl.dart';
+import 'package:get/get_connect/http/src/status/http_status.dart';
+import 'package:sims_ppob/app/data/top_up_provider.dart';
+import 'package:sims_ppob/app/routes/app_pages.dart';
+import 'package:sims_ppob/app/shared/components/custom_snackbar.dart';
 import 'package:sims_ppob/app/utils/consts/my_strings.dart';
 import 'package:sims_ppob/app/utils/my_utils.dart';
 
@@ -10,16 +13,14 @@ class TopUpController extends GetxController {
   List<int> nominal = [10000, 20000, 50000, 100000, 250000, 500000];
   RxInt selectedNominalIndex = (-1).obs;
   RxBool isBtnDisabled = true.obs;
+  RxBool isLoading = false.obs;
+
+  final _provider = Get.find<TopUpProvider>();
 
   void formatWithThousandSeparator(String value) {
-    String cleaned = value.replaceAll('.', '');
-
-    if (cleaned.isNotEmpty) {
+    if (value.isNotEmpty) {
       try {
-        int parsedValue = int.parse(cleaned);
-        final NumberFormat numberFormat = NumberFormat('#,###', 'en_US');
-        String formatted =
-            numberFormat.format(parsedValue).replaceAll(',', '.');
+        String formatted = MyUtils.strThousandFormat(value);
         nominalC.value = TextEditingValue(
           text: formatted,
           selection: TextSelection.collapsed(offset: formatted.length),
@@ -31,7 +32,7 @@ class TopUpController extends GetxController {
   }
 
   String? validateInput(String value) {
-    int? numericValue = int.tryParse(value.replaceAll('.', ''));
+    int? numericValue = MyUtils.strThousandToInt(value);
     if (numericValue == null) {
       return MyStrings.pleaseEnterNominal;
     } else if (numericValue < 10000) {
@@ -43,20 +44,45 @@ class TopUpController extends GetxController {
     return null;
   }
 
-  int getIntValue(String val) {
-    return int.parse(val.replaceAll('.', ''));
-  }
-
   bool isButtonDisable() {
     return selectedNominalIndex.value == -1 ||
-        getIntValue(nominalC.text) < 10000 ||
+        (MyUtils.strThousandToInt(nominalC.text) ?? 0) < 10000 ||
         nominalC.text.isEmpty ||
         nominalC.text.toLowerCase() == 'null';
   }
 
-  @override
-  void onClose() {
-    super.onClose();
-    nominalC.dispose();
+  Future<void> topUp() async {
+    try {
+      isLoading(true);
+
+      var topUpAmount = nominalC.text.isNotEmpty
+          ? MyUtils.strThousandToInt(nominalC.text)
+          : (selectedNominalIndex.value != -1
+              ? nominal[selectedNominalIndex.value]
+              : null);
+
+      if (topUpAmount == null) {
+        throw Exception(MyStrings.enterTopUpNominal);
+      }
+
+      var data = {
+        'top_up_amount': topUpAmount,
+      };
+
+      var res = await _provider.topUp(data);
+
+      if (res.statusCode == HttpStatus.ok) {
+        CustomSnackBar.success(
+          successList: [
+            res.body['message'],
+          ],
+        );
+        Get.offAllNamed(Routes.CORE);
+      }
+    } catch (e) {
+      MyUtils.exceptionHandler(e);
+    } finally {
+      isLoading(false);
+    }
   }
 }
