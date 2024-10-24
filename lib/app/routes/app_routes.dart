@@ -10,6 +10,7 @@ abstract class Routes {
   static const TOP_UP = _Paths.TOP_UP;
   static const PAYMENT = _Paths.PAYMENT;
   static const TRANSACTION_HISTORY = _Paths.TRANSACTION_HISTORY;
+  static const PROFILE = _Paths.PROFILE;
 }
 
 abstract class _Paths {
@@ -21,4 +22,5 @@ abstract class _Paths {
   static const TOP_UP = '/top-up';
   static const PAYMENT = '/payment';
   static const TRANSACTION_HISTORY = '/transaction-history';
+  static const PROFILE = '/profile';
 }
