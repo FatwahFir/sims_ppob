@@ -17,11 +17,11 @@ Welcome to the **SIMS PPOB App**, a mobile application built using Flutter 3.24 
 
 Here are some screenshots from the app:
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="assets/images/login_screen.jpg" alt="Login Screen" width="300"/>
-  <img src="assets/images/home_screen.jpg" alt="Dashboard" width="300"/>
-  <img src="assets/images/topup_screen.jpg" alt="Top Up Screen" width="300"/>
-  <img src="assets/images/history_screen.jpg" alt="Transaction History" width="300"/>
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+  <img src="assets/images/login_screen.jpg" alt="Login Screen" width="250"/>
+  <img src="assets/images/home_screen.jpg" alt="Dashboard" width="250"/>
+  <img src="assets/images/topup_screen.jpg" alt="Top Up Screen" width="250"/>
+  <img src="assets/images/history_screen.jpg" alt="Transaction History" width="250"/>
 </div>
 
 ## 🛠 Tech Stack
