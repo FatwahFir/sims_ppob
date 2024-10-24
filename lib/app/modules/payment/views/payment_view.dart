@@ -6,8 +6,10 @@ import 'package:sims_ppob/app/shared/components/common_button.dart';
 import 'package:sims_ppob/app/shared/components/common_text_field.dart';
 import 'package:sims_ppob/app/shared/components/loading_indicator.dart';
 import 'package:sims_ppob/app/shared/ui/gap.dart';
+import 'package:sims_ppob/app/theme/themes.dart';
 import 'package:sims_ppob/app/utils/box.dart';
 import 'package:sims_ppob/app/utils/consts/my_strings.dart';
+import 'package:sims_ppob/app/utils/my_utils.dart';
 
 import '../controllers/payment_controller.dart';
 
@@ -58,7 +60,7 @@ class PaymentView extends GetView<PaymentController> {
                             ),
                             const Gap.v(h: 25),
                             Form(
-                              // key: controller.formKey,
+                              key: controller.formKey,
                               child: CommonTextField(
                                 readOnly: true,
                                 isAutoValidate: true,
@@ -74,9 +76,25 @@ class PaymentView extends GetView<PaymentController> {
                     ),
                     const Gap.v(h: 20),
                     CommonButton(
+                      backgroundColor:
+                          (MyUtils.strThousandToInt(controller.amountC.text) ??
+                                      0) <
+                                  (Box.balance ?? 0)
+                              ? Themes.red
+                              : Themes.grayColor,
                       child: const Text(
                         MyStrings.pay,
                       ),
+                      onPressed: () {
+                        if ((MyUtils.strThousandToInt(
+                                    controller.amountC.text) ??
+                                0) <
+                            (Box.balance ?? 0)) {
+                          if (controller.formKey.currentState!.validate()) {
+                            controller.pay();
+                          }
+                        }
+                      },
                     ),
                   ],
                 ),

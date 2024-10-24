@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_connect/http/src/status/http_status.dart';
-import 'package:sims_ppob/app/data/top_up_provider.dart';
+import 'package:sims_ppob/app/data/providers/top_up_provider.dart';
 import 'package:sims_ppob/app/routes/app_pages.dart';
 import 'package:sims_ppob/app/shared/components/custom_snackbar.dart';
 import 'package:sims_ppob/app/utils/consts/my_strings.dart';
@@ -42,15 +42,6 @@ class TopUpController extends GetxController {
     }
 
     return null;
-  }
-
-  bool isButtonDisable() {
-    // return selectedNominalIndex.value == -1 ||
-    //     (MyUtils.strThousandToInt(nominalC.text) ?? 0) < 10000 ||
-    //     (MyUtils.strThousandToInt(nominalC.text) ?? 0) > 1000000 ||
-    //     nominalC.text.isEmpty ||
-    //     nominalC.text.toLowerCase() == 'null';
-    return (MyUtils.strThousandToInt(nominalC.text) ?? 0) > 1000000;
   }
 
   Future<void> topUp() async {

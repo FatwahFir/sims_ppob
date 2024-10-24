@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:sims_ppob/app/data/top_up_provider.dart';
+import 'package:sims_ppob/app/data/providers/top_up_provider.dart';
 
 import '../controllers/top_up_controller.dart';
 
