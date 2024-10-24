@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:sims_ppob/app/utils/box.dart';
 
 import '../modules/auth/bindings/auth_binding.dart';
 import '../modules/auth/views/auth_view.dart';
@@ -20,7 +21,8 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.TRANSACTION_HISTORY;
+  // static const INITIAL = Routes.TRANSACTION_HISTORY;
+  static var INITIAL = Box.token != null ? Routes.CORE : Routes.AUTH;
 
   static final routes = [
     GetPage(
@@ -45,6 +47,7 @@ class AppPages {
         bindings: [
           HomeBinding(),
           TopUpBinding(),
+          TransactionHistoryBinding(),
         ]),
     GetPage(
       name: _Paths.TOP_UP,
