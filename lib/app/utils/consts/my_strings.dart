@@ -9,9 +9,16 @@ class MyStrings {
   static const String expiredDate = 'Tanggal Kedaluwarsa';
   static const String noTransaction = 'Tidak ada transaksi';
 
+  static const String warnLogoutMsg =
+      'Anda tidak dapat mengakses sumber daya aplikasi jika keluar';
+  static const String topUpMessage =
+      'Pastikan nominal yang Anda masukan sudah sesuai!';
+
   static const String users = 'Pengguna';
+  static const String areYouSure = 'Anda Yakin?';
 
   static const String readOnly = "Hanya Lihat";
+  static const String recheck = "Cek Kembali!";
 
   static const String pay = 'Bayar';
 

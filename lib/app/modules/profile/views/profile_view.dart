@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:sims_ppob/app/routes/app_pages.dart';
+import 'package:sims_ppob/app/shared/components/alert_dialog.dart';
 import 'package:sims_ppob/app/shared/components/avatar_field.dart';
 import 'package:sims_ppob/app/shared/components/common_button.dart';
 import 'package:sims_ppob/app/shared/components/common_text_field.dart';
@@ -117,8 +118,15 @@ class ProfileView extends GetView<ProfileController> {
                               CommonButton(
                                 child: const Text(MyStrings.logout),
                                 onPressed: () {
-                                  Box.session.erase();
-                                  Get.offAllNamed(Routes.AUTH);
+                                  const WarningAlertDialog().warningAlertDialog(
+                                    Get.context!,
+                                    MyStrings.areYouSure,
+                                    MyStrings.warnLogoutMsg,
+                                    () async {
+                                      Box.session.erase();
+                                      Get.offAllNamed(Routes.AUTH);
+                                    },
+                                  );
                                 },
                               ),
                             ],

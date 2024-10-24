@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:sims_ppob/app/shared/components/alert_dialog.dart';
 import 'package:sims_ppob/app/shared/components/balance_widget.dart';
 import 'package:sims_ppob/app/shared/components/common_button.dart';
 import 'package:sims_ppob/app/shared/components/common_text_field.dart';
@@ -154,7 +155,14 @@ class TopUpView extends GetView<TopUpController> {
                           onPressed: () {
                             if (controller.selectedNominalIndex.value != -1 ||
                                 controller.isBtnDisabled.isFalse) {
-                              controller.topUp();
+                              const WarningAlertDialog().warningAlertDialog(
+                                Get.context!,
+                                MyStrings.recheck,
+                                MyStrings.topUpMessage,
+                                () async {
+                                  controller.topUp();
+                                },
+                              );
                             }
                           },
                         ),
