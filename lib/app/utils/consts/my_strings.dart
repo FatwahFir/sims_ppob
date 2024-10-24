@@ -53,6 +53,11 @@ class MyStrings {
   static const String no = "Tidak";
   static const String yes = "Ya";
 
+  static const String lessThan100kb =
+      'Ukuran file tidak boleh lebih dari 100KB';
+  static const String mustBeJPG =
+      'Hanya file dengan format JPG/JPEG yang diperbolehkan';
+
   static const String hasUpperLetter = "Memiliki huruf kapital";
   static const String hasLowerLetter = "Memiliki huruf kecil";
   static const String hasDigit = "Memiliki digit";
