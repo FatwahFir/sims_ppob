@@ -1,6 +1,6 @@
 # SIMS PPOB - Flutter Technical Test
 
-Welcome to the **E-Wallet App**, a mobile application built using Flutter 3.24 and powered by GetX 4.6 for state management. This project is developed as part of a **Technical Test** to demonstrate proficiency in Flutter and mobile development best practices.
+Welcome to the **SIMS PPOB App**, a mobile application built using Flutter 3.24 and powered by GetX 4.6 for state management. This project is developed as part of a **Technical Test** to demonstrate proficiency in Flutter and mobile development best practices.
 
 ## ✨ Features
 
@@ -18,8 +18,9 @@ Welcome to the **E-Wallet App**, a mobile application built using Flutter 3.24 a
 Here are some screenshots from the app:
 
 ![Login Screen](assets/images/login_screen.png)
-![Dashboard](assets/images/dashboard_screen.png)
-![Transaction History](assets/images/transaction_history.png)
+![Dashboard](assets/images/home_screen.png)
+![Top Up Screen](assets/images/topup_screen.png)
+![Transaction History](assets/images/history_screen.png)
 
 > Make sure to replace the URLs above with the correct path to the images once you add them to your repo.
 
@@ -27,9 +28,8 @@ Here are some screenshots from the app:
 
 - **Framework**: [Flutter 3.24](https://flutter.dev/)
 - **State Management**: [GetX 4.6](https://pub.dev/packages/get)
-- **Networking**: Dio (or another networking package if used)
-- **Local Storage**: Shared Preferences / Hive
-- **Design**: Material Design, Custom Widgets
+- **Networking**: GetConnect
+- **Local Storage**: GetStorage
 - **Language**: Dart
 
 ## 🚀 Installation Guide
