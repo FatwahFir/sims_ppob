@@ -13,11 +13,13 @@ class AvatarField extends StatefulWidget {
   Function(File) onChange;
   String? networkImage;
   bool? isShowEditBtn;
+  double? radius;
   AvatarField({
     super.key,
     required this.onChange,
     this.networkImage,
     this.isShowEditBtn = true,
+    this.radius = 50,
   });
 
   @override
@@ -31,7 +33,7 @@ class _AvatarFieldState extends State<AvatarField> {
     return Stack(
       children: [
         CircleAvatar(
-          radius: 50,
+          radius: widget.radius,
           backgroundColor: Themes.white,
           backgroundImage: _image != null
               ? FileImage(File(_image!.path)) as ImageProvider<Object>?

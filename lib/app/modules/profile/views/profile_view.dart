@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:sims_ppob/app/routes/app_pages.dart';
 import 'package:sims_ppob/app/shared/components/avatar_field.dart';
 import 'package:sims_ppob/app/shared/components/common_button.dart';
 import 'package:sims_ppob/app/shared/components/common_text_field.dart';
@@ -112,6 +113,10 @@ class ProfileView extends GetView<ProfileController> {
                               const Gap.v(h: 15),
                               CommonButton(
                                 child: const Text(MyStrings.logout),
+                                onPressed: () {
+                                  Box.session.erase();
+                                  Get.offAllNamed(Routes.AUTH);
+                                },
                               ),
                             ],
                           ),

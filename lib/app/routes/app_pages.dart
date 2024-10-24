@@ -23,8 +23,8 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.PROFILE;
-  // static var INITIAL = Box.token != null ? Routes.CORE : Routes.AUTH;
+  // static const INITIAL = Routes.PROFILE;
+  static var INITIAL = Box.token != null ? Routes.CORE : Routes.AUTH;
 
   static final routes = [
     GetPage(
@@ -50,6 +50,7 @@ class AppPages {
           HomeBinding(),
           TopUpBinding(),
           TransactionHistoryBinding(),
+          ProfileBinding(),
         ]),
     GetPage(
       name: _Paths.TOP_UP,

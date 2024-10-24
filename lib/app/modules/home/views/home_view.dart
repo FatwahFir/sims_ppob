@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sims_ppob/app/modules/home/widgets/grid_item.dart';
 import 'package:sims_ppob/app/routes/app_pages.dart';
+import 'package:sims_ppob/app/shared/components/avatar_field.dart';
 import 'package:sims_ppob/app/shared/components/balance_widget.dart';
 import 'package:sims_ppob/app/shared/components/loading_indicator.dart';
 import 'package:sims_ppob/app/shared/ui/gap.dart';
@@ -49,17 +50,11 @@ class HomeView extends GetView<HomeController> {
                                 )
                               ],
                             ),
-                            InkWell(
-                              onTap: () {
-                                Box.session.erase();
-                                Get.offAllNamed(Routes.AUTH);
-                                // controller.balance.value += 100000;
-                              },
-                              child: CircleAvatar(
-                                backgroundImage:
-                                    const AssetImage(MyPath.profileImage),
-                                backgroundColor: Themes.white,
-                              ),
+                            AvatarField(
+                              isShowEditBtn: false,
+                              radius: 20,
+                              onChange: (_) {},
+                              networkImage: Box.user?.profileImage ?? '-',
                             )
                           ],
                         ),
