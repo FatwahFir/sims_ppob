@@ -13,6 +13,17 @@ Welcome to the **SIMS PPOB App**, a mobile application built using Flutter 3.24 
 - **Payments**: Make payments using the e-wallet balance for services or products.
 - **Transaction History**: View a complete history of past transactions, including timestamps and amounts.
 
+## 📱 Screenshots
+
+Here are some screenshots from the app:
+
+![Login Screen](assets/images/login_screen.jpg)
+![Dashboard](assets/images/home_screen.jpg)
+![Top Up Screen](assets/images/topup_screen.jpg)
+![Transaction History](assets/images/history_screen.jpg)
+
+> Make sure to replace the URLs above with the correct path to the images once you add them to your repo.
+
 ## 🛠 Tech Stack
 
 - **Framework**: [Flutter 3.24](https://flutter.dev/)
