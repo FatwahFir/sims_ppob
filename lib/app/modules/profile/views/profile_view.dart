@@ -56,7 +56,7 @@ class ProfileView extends GetView<ProfileController> {
                         ),
                         const Gap.v(h: 12),
                         CommonTextField(
-                          readOnly: controller.isEditMode.isFalse,
+                          readOnly: true,
                           controller: controller.emailC,
                           prefixIcon: Icons.alternate_email,
                         ),
@@ -70,6 +70,12 @@ class ProfileView extends GetView<ProfileController> {
                           readOnly: controller.isEditMode.isFalse,
                           controller: controller.firstNameC,
                           prefixIcon: Icons.person_2_outlined,
+                          validator: (value) {
+                            if (value!.isEmpty) {
+                              return MyStrings.requiredMsg;
+                            }
+                            return null;
+                          },
                         ),
                         const Gap.v(h: 12),
                         Text(
@@ -81,6 +87,12 @@ class ProfileView extends GetView<ProfileController> {
                           readOnly: controller.isEditMode.isFalse,
                           controller: controller.lastNameC,
                           prefixIcon: Icons.person_2_outlined,
+                          validator: (value) {
+                            if (value!.isEmpty) {
+                              return MyStrings.requiredMsg;
+                            }
+                            return null;
+                          },
                         ),
                         const Gap.v(h: 40),
                         Visibility(
@@ -90,7 +102,7 @@ class ProfileView extends GetView<ProfileController> {
                               CommonButton(
                                 hasBorderSide: true,
                                 borderColor: Themes.red,
-                                backgroundColor: Themes.transparent,
+                                backgroundColor: Themes.white,
                                 child: Text(
                                   MyStrings.editProfile,
                                   style: TextStyle(color: Themes.red),
@@ -111,12 +123,19 @@ class ProfileView extends GetView<ProfileController> {
                             children: [
                               CommonButton(
                                 child: const Text(MyStrings.save),
+                                onPressed: () {
+                                  if (controller.formKey.currentState!
+                                      .validate()) {
+                                    controller.formKey.currentState!.save();
+                                    controller.updateProfile();
+                                  }
+                                },
                               ),
                               const Gap.v(h: 20),
                               CommonButton(
                                 hasBorderSide: true,
                                 borderColor: Themes.red,
-                                backgroundColor: Themes.transparent,
+                                backgroundColor: Themes.white,
                                 child: Text(
                                   MyStrings.cancel,
                                   style: TextStyle(color: Themes.red),

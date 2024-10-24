@@ -7,4 +7,9 @@ class ProfileProvider extends BaseProvider {
         '/profile/image',
         form,
       );
+
+  Future<Response> updateProfile(var data) async => await put(
+        '/profile/update',
+        data,
+      );
 }
