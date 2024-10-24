@@ -7,6 +7,7 @@ class MyStrings {
   static const String kyc = 'KYC';
   static const String reason = 'Alasan';
   static const String expiredDate = 'Tanggal Kedaluwarsa';
+  static const String noTransaction = 'Tidak ada transaksi';
 
   static const String users = 'Pengguna';
 

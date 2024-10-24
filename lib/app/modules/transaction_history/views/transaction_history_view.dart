@@ -65,9 +65,11 @@ class TransactionHistoryView extends GetView<TransactionHistoryController> {
                     },
                     onLoading: const LoadingIndicatior(),
                     onEmpty: RefreshWidget(
+                      message: MyStrings.noTransaction,
                       onRefresh: () => controller.getTransactionHistories(),
                     ),
                     onError: (_) => RefreshWidget(
+                      message: MyStrings.somethingWentWrong,
                       onRefresh: () => controller.getTransactionHistories(),
                     ),
                   ),
@@ -105,9 +107,11 @@ class RefreshWidget extends StatelessWidget {
   const RefreshWidget({
     super.key,
     this.onRefresh,
+    this.message = MyStrings.refresh,
   });
 
   final VoidCallback? onRefresh;
+  final String? message;
 
   @override
   Widget build(BuildContext context) {
@@ -115,7 +119,7 @@ class RefreshWidget extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            MyStrings.refresh,
+            message ?? '-',
             style: Get.textTheme.bodyLarge?.copyWith(
               fontWeight: FontWeight.bold,
             ),
