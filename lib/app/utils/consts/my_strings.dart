@@ -11,6 +11,8 @@ class MyStrings {
 
   static const String users = 'Pengguna';
 
+  static const String readOnly = "Hanya Lihat";
+
   static const String pay = 'Bayar';
 
   static const String refresh = 'Segarkan';

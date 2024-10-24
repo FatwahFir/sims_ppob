@@ -56,10 +56,13 @@ class ProfileView extends GetView<ProfileController> {
                           style: Get.textTheme.labelLarge,
                         ),
                         const Gap.v(h: 12),
-                        CommonTextField(
-                          readOnly: true,
-                          controller: controller.emailC,
-                          prefixIcon: Icons.alternate_email,
+                        Tooltip(
+                          message: MyStrings.readOnly,
+                          child: CommonTextField(
+                            readOnly: true,
+                            controller: controller.emailC,
+                            prefixIcon: Icons.alternate_email,
+                          ),
                         ),
                         const Gap.v(h: 12),
                         Text(
